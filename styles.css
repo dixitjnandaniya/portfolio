@@ -1,0 +1,256 @@
+.about-section {
+    text-align: center;
+    padding: 50px 0;
+}
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 20px;
+}
+.about-section p {
+    color: #333;
+}
+
+  /* Additional CSS for Projects Section */
+.projects-section h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+.card {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+}
+.card-img-top {
+    max-height: 180px; /* Adjust this value to fit the image properly in the card */
+    object-fit: cover; /* This makes sure the image covers the area properly */
+}
+.card-body {
+    padding: 15px;
+}
+.card-title {
+    font-size: 1.25rem;
+}
+.card-text {
+    margin-bottom: 15px;
+}
+
+/* Additional CSS for Skills Section */
+.skills-section h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+.skills-section .card {
+    height: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.skills-section .card-img-top {
+    padding: 20px; /* Add padding around your images if needed */
+    background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+    height: 180px; /* Fixed height for consistency */
+    object-fit: contain; /* This will make sure the image is scaled properly within the container */
+}
+.skills-section .card-body {
+    padding: 15px;
+}
+.skills-section .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+.skills-section .btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+.skills-section .btn-outline-primary:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Additional CSS for Contact Section */
+.contact-section {
+    padding: 50px 0;
+}
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+.contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.social-icon {
+    width: 50px; /* Size of your icons */
+    margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+    opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+    color: #fff;
+    text-decoration: none; /* Removes underline from links */
+    display: inline-block; /* Allows for margin on the bottom */
+    margin-bottom: 10px;
+}
+.contact-section a:hover {
+    color: #ddd; /* Color when hovering over the link */
+}
+
+/* CSS for Sticky Navbar */
+.navbar {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body { 
+    padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+    .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+    }
+}
+
+.carousel-item .card {
+    margin: 0 15px; /* Adjust spacing between cards */
+}
+  
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;  /* Control the width of the area responsive for the control */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-size: 100%, 100%;
+}
+
+.carousel-control-prev {
+    left: -5%;  /* Adjust this value if necessary to position the arrow correctly */
+}
+
+.carousel-control-next {
+    right: -5%;  /* Adjust this value if necessary to position the arrow correctly */
+}
+
+.carousel-item .card {
+    margin: 0 15px; /* Adds spacing between cards, adjust as necessary */
+}
+
+/* Ensures the arrows are vertically centered relative to the carousel */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="30" height="30" viewBox="0 0 8 8" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.25 0l-5.25 4.03 5.25 3.97v-2.181h8v-3.617h-8v-2.199z"/></svg>');
+    opacity: 0.8;
+}
+
+.carousel-control-next-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg width="30" height="30" viewBox="0 0 8 8" fill="currentColor" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M2.75 0v2.181H-5.25v3.637h8V8L8 4.031 2.75 0z"/%3E%3C/svg%3E');
+    opacity: 0.8;
+}
+
+
+.carousel-control-prev-icon {
+    left: 50%;
+    margin-left: -50px;
+}
+
+.carousel-control-next-icon {
+    right: 50%;
+    margin-right: -50px;
+}
+
+/* Ensures that the body does not overflow horizontally */
+body {
+    overflow-x: hidden;
+}
+
+/* Styling for the Projects Section */
+.projects-section {
+    padding: 2rem 0;  /* Adjust top and bottom padding */
+}
+
+/* Adjust spacing and alignment for carousel controls to ensure they do not cause overflow */
+.carousel-control-prev, .carousel-control-next {
+    width: 4%;  /* Reduced width */
+}
+
+.carousel-control-prev {
+    left: 0;  /* Adjusted to not overflow */
+}
+
+.carousel-control-next {
+    right: 0;  /* Adjusted to not overflow */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    opacity: 0.8;  /* Ensure visibility */
+}
+
+/* Adding margin between filter buttons and project cards */
+.projects-section .container {
+    margin-top: 20px;  /* Space above the carousel */
+}
+
+/* Fix project card width issues that might be causing overflow */
+.card {
+    margin: 0 10px; /* Reducing side margins within the carousel */
+    width: calc(100% / 3 - 20px); /* Adjusting width calculation to ensure 3 cards fit without causing overflow */
+}
+
+/* Improve responsiveness of project cards */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;  /* Full width on smaller screens to avoid horizontal scroll */
+        margin-bottom: 20px; /* Space between cards vertically on small screens */
+    }
+}
+
+#projectsCarousel {
+    margin: 0 auto;  /* Center the carousel */
+    width: 70%;  /* Restrict the carousel to 70% of the parent's width */
+    max-width: 1200px;  /* Optional: Sets a max-width to prevent it from becoming too large on wider screens */
+}
+
+/* Adjusting the card layout within the carousel to ensure they don't stretch too wide */
+.card {
+    margin: 15px;  /* Adds some margin around cards for breathing room */
+    flex: 0 0 auto;  /* Ensures cards do not grow or shrink to fill space */
+    width: calc((100% / 3) - 30px);  /* Calculates width to show 3 cards per slide with spacing */
+}
+
+/* Adjust carousel controls to fit new layout */
+.carousel-control-prev, .carousel-control-next {
+    width: 2.5%;  /* Reduce the width of the clickable area to finer control */
+}
+
+.carousel-control-prev {
+    left: -2.5%;  /* Adjusts the position to be more visually balanced */
+}
+
+.carousel-control-next {
+    right: -2.5%;  /* Adjusts the position to be more visually balanced */
+}
