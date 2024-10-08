@@ -1,0 +1,117 @@
+{
+    "projects": [
+      {
+        "id": "ReSecure",
+        "title": "ReSecure",
+        "description": "Description of ReSecure",
+        "categories": ["Android Applications"],
+        "image": "images/projects/ReSecure/ReSecure.jpg",
+        "link": "./projects.html"
+      },
+      {
+        "id": "MLKIDA",
+        "title": "ML K.I.D.A.",
+        "description": "Description of ML KIDA",
+        "categories": ["Artificial Intelligence", "Web Development", "Python"],
+        "image": "images/projects/MLKIDA/MLKIDA.jpg",
+        "link": "./projects.html"
+      },
+      {
+        "id": "AdventureMinds",
+        "title": "AdventureMinds",
+        "description": "Description of AdventureMinds",
+        "categories": ["Web Development", "Python"],
+        "image": "images/projects/AdventureMinds/AdventureMinds.jpg",
+        "link": "./projects.html"
+      },
+      {
+        "id": "PlantDiseaseDetection",
+        "title": "Plant Disease Detection",
+        "description": "Description of PlantDiseaseDetection",
+        "categories": ["Artificial Intelligence", "Python"],
+        "image": "images/projects/PlantDiseaseDetection/PlantDiseaseDetection.jpg",
+        "link": "./projects.html"
+      },
+      {
+        "id": "YouTubeDataAnalysis",
+        "title": "YouTube Data Analysis",
+        "description": "Description of YouTubeDataAnalysis",
+        "categories": ["AWS", "Data Analysis"],
+        "image": "images/projects/YouTubeDataAnalysis/YouTubeDataAnalysis.jpg",
+        "link": "./projects.html"
+      },
+      {
+        "id": "ClientServerApplication",
+        "title": "Client Server Application",
+        "description": "Description of ClientServerApplication",
+        "categories": ["C Language"],
+        "image": "images/projects/ClientServerApplication/ClientServerApplication.jpg",
+        "link": "./projects.html"
+      },
+      {
+        "id": "DiabetesDiseasePrediction",
+        "title": "Diabetes Disease Prediction",
+        "description": "Description of DiabetesDiseasePrediction",
+        "categories": ["Artificial Intelligence", "Python"],
+        "image": "images/projects/DiabetesDiseasePrediction/DiabetesDiseasePrediction.jpg",
+        "link": "./projects.html"
+      },
+      {
+        "id": "WiseBridge",
+        "title": "WiseBridge",
+        "description": "Description of WiseBridge",
+        "categories": ["Android Applications"],
+        "image": "images/projects/WiseBridge/WiseBridge.jpg",
+        "link": "./projects.html"
+      },
+      {
+        "id": "WebSearchEngine",
+        "title": "Web Search Engine",
+        "description": "Description of WebSearchEngine",
+        "categories": ["Data Structures & Algorithms"],
+        "image": "images/projects/WebSearchEngine/WebSearchEngine.jpg",
+        "link": "./projects.html"
+      },
+      {
+        "id": "TradeManager",
+        "title": "Trade Manager",
+        "description": "Description of Trade Manager",
+        "categories": ["Python", "Algo Trading"],
+        "image": "images/projects/TradeManager/TradeManager.jpg",
+        "link": "./projects.html"
+      },
+      {
+        "id": "TradeCopy",
+        "title": "Trade Copy",
+        "description": "Description of TradeCopy",
+        "categories": ["Python", "Algo Trading"],
+        "image": "images/projects/TradeCopy/TradeCopy.jpg",
+        "link": "./projects.html"
+      },
+      {
+        "id": "TradeMaster",
+        "title": "Trade Master",
+        "description": "Description of TradeMaster",
+        "categories": ["Python", "Algo Trading"],
+        "image": "images/projects/TradeMaster/TradeMaster.jpg",
+        "link": "./projects.html"
+      },
+      {
+        "id": "HedgeStrategy",
+        "title": "Hedge Strategy",
+        "description": "Description of HedgeStrategy",
+        "categories": ["Python", "Algo Trading"],
+        "image": "images/projects/HedgeStrategy/HedgeStrategy.jpg",
+        "link": "./projects.html"
+      },
+      {
+        "id": "PlacementPackagePrediction",
+        "title": "Placement Package Prediction",
+        "description": "Description of PlacementPackagePrediction",
+        "categories": ["Artificial Intelligence", "Android Applications", "Python"],
+        "image": "images/projects/PlacementPackagePrediction/PlacementPackagePrediction.jpg",
+        "link": "./projects.html"
+      }
+    ]
+  }
+  
