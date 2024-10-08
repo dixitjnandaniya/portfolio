@@ -54,7 +54,7 @@ injectAll();
 
 
 function loadCategory(filePath) {
-    const container = document.getElementById('project-content');
+    const container = document.getElementById('projectsCarousel');
     fetch(filePath)
       .then(response => response.text())
       .then(html => {
@@ -114,34 +114,63 @@ function loadProjectsByCategory(category) {
     });
 }
   
-  function updateCarousel(projects) {
-    const carouselInner = document.querySelector('.carousel-inner');
-    carouselInner.innerHTML = ''; // Clear existing items
-    let items = '';
-    let itemActive = true;
-  
-    projects.forEach((project, index) => {
-      if (index % 3 === 0) { // Start new carousel item every 3 projects
-        if (items) {
-          carouselInner.innerHTML += `<div class="carousel-item${itemActive ? ' active' : ''}"><div class="d-flex justify-content-around">${items}</div></div>`;
-          items = '';
-          itemActive = false;
-        }
+function updateCarousel(projects) {
+  const carouselInner = document.querySelector('.carousel-inner');
+  const carouselIndicators = document.querySelector('.carousel-indicators'); // Get the indicators container
+  carouselInner.innerHTML = ''; // Clear existing items
+  carouselIndicators.innerHTML = ''; // Clear existing indicators
+
+  let items = '';
+  let itemActive = true;
+  let slideIndex = 0; // Keep track of slide index
+
+  const totalSlides = Math.ceil(projects.length / 3); // Calculate number of slides based on number of projects (max 3 per slide)
+
+  // Loop through the projects and create slides
+  projects.forEach((project, index) => {
+      if (index % 3 === 0) { // Start a new carousel item every 3 projects
+          if (items) {
+              const justifyClass = projects.length <= 2 ? 'justify-content-center' : 'justify-content-around';
+              carouselInner.innerHTML += `<div class="carousel-item${itemActive ? ' active' : ''}">
+                                            <div class="row ${justifyClass}">${items}</div>
+                                          </div>`;
+              items = '';
+              itemActive = false;
+          }
+
+          // Dynamically create carousel indicators
+          if (slideIndex < totalSlides) {
+              carouselIndicators.innerHTML += `<li data-target="#projectsCarousel" data-slide-to="${slideIndex}" class="${slideIndex === 0 ? 'active' : ''}"></li>`;
+          }
+          slideIndex++;
       }
+
+      // Create individual cards for each project
       items += `
-        <div class="card" id="${project.id}Card" style="width: 18rem;">
+      <div class="col-md-4">
+        <div class="card mb-4" id="${project.id}Card" style="width: 100%;">
           <img class="card-img-top" src="${project.image}" alt="${project.title}">
           <div class="card-body">
             <h5 class="card-title">${project.title}</h5>
             <p class="card-text">${project.description}</p>
             <a href="${project.link}" class="btn btn-primary">View More</a>
           </div>
-        </div>`;
-    });
-  
-    // Add remaining items if any
-    if (items) {
-      carouselInner.innerHTML += `<div class="carousel-item${itemActive ? ' active' : ''}"><div class="d-flex justify-content-around">${items}</div></div>`;
-    }
-  }  
+        </div>
+      </div>`;
+  });
+
+  // Add remaining items if any
+  if (items) {
+      const justifyClass = projects.length < 3 ? 'justify-content-center' : 'justify-content-around';
+      carouselInner.innerHTML += `<div class="carousel-item${itemActive ? ' active' : ''}">
+                                    <div class="row ${justifyClass}">${items}</div>
+                                  </div>`;
+      // Add an indicator for the last slide if needed
+      if (slideIndex < totalSlides) {
+          carouselIndicators.innerHTML += `<li data-target="#projectsCarousel" data-slide-to="${slideIndex}" class="${slideIndex === 0 ? 'active' : ''}"></li>`;
+      }
+  }
+}
+
+
 
