@@ -10,7 +10,8 @@
     width: 200px; /* Adjust the size as needed */
     height: 200px;
     border-radius: 50%; /* Makes the image round */
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .about-section p {
     color: #333;
@@ -244,6 +245,8 @@ body {
 
 /* Adjust carousel controls to fit new layout */
 .carousel-control-prev, .carousel-control-next {
+  background-color: transparent; /* Make sure the background remains transparent */
+    filter: invert(100%) brightness(100%) contrast(100%);
     width: 2.5%;  /* Reduce the width of the clickable area to finer control */
 }
 
@@ -313,7 +316,7 @@ img {
   #home {
     position: relative;
     min-height: 100vh;
-    background: url('images/background.png') no-repeat center center fixed;
+    background: url('images/homepage.jpg') no-repeat center center fixed;
     background-size: cover;
     color: white;
     display: flex;
@@ -334,6 +337,32 @@ img {
   }
 
   #home .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  #projects {
+    position: relative;
+    min-height: 100vh;
+    background: url('images/project_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #projects::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    z-index: 1;
+  }
+
+  #projects .container {
     position: relative;
     z-index: 2;
   }
@@ -374,8 +403,9 @@ img {
   }
 
   .btn-outline-light {
-    color: white; /* Button text color */
-    border-color: white; /* Border to be white */
+    color: #ffffff; /* Button text color */
+    border-color: #ffffff; /* Border to be white */
+    background-color: #0056b3;
   }
 
   .btn-outline-light:hover {
@@ -410,6 +440,9 @@ img {
     padding: 10px 20px;
     font-size: 14px;
     transition: background-color 0.3s, color 0.3s;
+    border-color: rgb(255, 255, 255);
+    color: #0056b3;
+    background-color: white;
   }
   
   .category-btn:hover {
@@ -420,7 +453,7 @@ img {
   .btn-primary {
     border-radius: 25px; /* Make buttons rounded */
     background-color: #007bff;
-    border-color: #007bff;
+    border-color: black;
   }
   
   .btn-primary:hover {
@@ -430,7 +463,7 @@ img {
 
   .card {
     width: 100%; /* Take full width inside the column */
-    height: 350px; /* Set a fixed height for all cards */
+    height: 400px; /* Set a fixed height for all cards */
     display: flex;
     flex-direction: column; /* Align content vertically */
     justify-content: space-between; /* Spread content evenly */
@@ -461,11 +494,15 @@ img {
   }
   
   .card-text {
-    flex-grow: 1;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; /* Keep text in a single line */
-    margin-bottom: 10px;
+    font-size: 0.7rem; /* Reduce text size */
+    padding-left: 20px; /* Indent bullet points */
+    list-style-type: disc; /* Use bullet points */
+    line-height: 1.5; /* Add some spacing between the lines */
+    margin-bottom: 15px; /* Ensure space between text and the button */
+  }
+
+  .card-text li {
+      margin-bottom: 5px; /* Space between each bullet point */
   }
   
   .card-footer {
@@ -487,7 +524,7 @@ img {
   }
   
   .carousel-indicators li {
-    background-color: #007bff;
+    background-color: white;
     width: 10px;
     height: 10px;
     border-radius: 50%; /* Make indicators round */
@@ -530,6 +567,7 @@ img {
   }
   
   #home p.lead {
+    color: white;
     font-size: 1.5rem;
   }
   
@@ -578,3 +616,151 @@ img {
       width: 100%; /* Buttons will be full width on mobile */
     }
   }
+
+
+
+
+
+
+
+/* Background Colors */
+body {
+  background-color: #FFFFFF; /* White background */
+}
+
+header, footer {
+  background-color: #306998; /* Python Blue for headers */
+}
+
+/* Text Colors */
+h1, h4 {
+  color: #ffffff; /* Dark Blue for headings */
+}
+
+h3{
+  color: black;
+}
+
+p, a {
+  color: #204060; /* Dark Blue for body text */
+}
+
+/* Accent and Border Colors */
+.accent {
+  color: #FFD43B; /* Yellow for accents */
+}
+
+.navbar {
+  background-color: #306998; /* Python Blue for Navbar */
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: #ffffff; /* White text for links */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FFD43B; /* Yellow hover effect */
+}
+
+
+#projectDetails {
+  max-width: 900px; /* Set a maximum width for the content */
+  margin: 0 auto;   /* This will center the content horizontally */
+  padding: 20px;    /* Add some padding to prevent the text from touching the edges */
+  text-align: justify; /* Justify text for even alignment on both sides */
+}
+
+
+#projectDetails h1, #projectDetails h3, #projectDetails h4 {
+  text-align: left; /* Headings should remain left-aligned */
+}
+
+
+#projectDetails h4 {
+  margin-top: 40px;  /* Add space above the heading */
+  margin-bottom: 20px;  /* Space below the heading */
+  color: #306998;
+}
+
+#projectDetails p, #projectDetails ul {
+  margin-bottom: 30px;  /* Add space below paragraphs and lists */
+}
+
+
+.projects-section h2{
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+.skills-section {
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #003b64;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-bottom: 40px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  background-color: #003b64;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10000; /* Ensure tooltip is above other elements */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: #ffffff;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 10000; /* Ensure tooltip is above other elements */
+  bottom: 100%;
+  left: 50%;
+  margin-left: -125px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  z-index: 10000;
+}
+
+
+
+
+
+
+
+.skill-logo {
+  width: 40px;
+  height: 40px;
+}

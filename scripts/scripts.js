@@ -68,7 +68,7 @@ function loadCategory(filePath) {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    loadCategory('./projects/projects.html');
+    loadCategory('./projects.html');
     setupCategoryButtons();
 });
 
@@ -88,7 +88,7 @@ function setupCategoryButtons() {
 }
 
 function loadProjectsByCategory(category = "All") {
-    fetch('./projects/projects_info.json')
+    fetch('./json_data/projects_info.json')
       .then(response => response.json())
       .then(data => {
         const projects = category === "All"
@@ -101,7 +101,7 @@ function loadProjectsByCategory(category = "All") {
 
   
 function loadProjectsByCategory(category) {
-    fetch('./projects/projects_info.json')
+    fetch('./json_data/projects_info.json')
       .then(response => response.json())
       .then(data => {
         let projects;
@@ -146,14 +146,15 @@ function updateCarousel(projects) {
       }
 
       // Create individual cards for each project
+      skillItems = project.skills.map(skill => `<li>${skill.trim()}</li>`).join('');
       items += `
       <div class="col-md-4">
         <div class="card mb-4" id="${project.id}Card" style="width: 100%;">
           <img class="card-img-top" src="${project.image}" alt="${project.title}">
           <div class="card-body">
             <h5 class="card-title">${project.title}</h5>
-            <p class="card-text">${project.description}</p>
-            <a href="${project.link}" class="btn btn-primary">View More</a>
+            <ul class="card-text">${skillItems}</ul>
+            <a href="./project_details.html?projectId=${project.id}" class="btn btn-primary">View More</a>
           </div>
         </div>
       </div>`;
@@ -174,3 +175,20 @@ function updateCarousel(projects) {
 
 
 
+
+// Function to fetch skills from the JSON file and load them into the HTML
+fetch('./json_data/skills_info.json')
+  .then(response => response.json())
+  .then(data => {
+    const skillsContainer = document.getElementById('skills-container');
+    data.skills.forEach(skill => {
+      const skillHTML = `
+        <div class="col-md-3 mb-4">
+          <img src="${skill.image}" alt="${skill.name} Logo" class="img-fluid skill-logo mb-2">
+          <h6>${skill.name}</h6>
+        </div>
+      `;
+      skillsContainer.innerHTML += skillHTML;
+    });
+  })
+  .catch(error => console.error('Error loading JSON:', error));
