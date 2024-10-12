@@ -764,3 +764,63 @@ p, a {
   width: 40px;
   height: 40px;
 }
+
+
+
+
+
+
+
+/* Additional CSS for Contact Section */
+.contact-section {
+  min-height: 100vh; /* Ensures the section covers the full viewport height */
+  padding: 50px 0; /* Add some padding */
+  display: flex;
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.contact-section h3 {
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 24px; /* Adjust font size */
+}
+
+.form-control {
+  border-radius: 0;
+  padding: 15px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  box-shadow: none;
+  border: 1px solid #ccc; /* Add subtle border */
+}
+
+.contact-info {
+  margin-left: 150px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  text-align: left; /* Align the text to the left */
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+  line-height: 1.5; /* Adjust line spacing */
+  text-align: left; /* Ensure all list items are aligned to the left */
+}
+
+.contact-info strong {
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px; /* Add some space below the label */
+  color: #333;
+  text-align: left; /* Align the strong text to the left */
+}
+
+/* Update button to match design */
+button[type="submit"] {
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border-radius: 5px;
+  text-transform: uppercase;
+}

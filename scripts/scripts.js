@@ -1,24 +1,32 @@
-async function injectHTML(filePath,elem) {
-    try {
-        const response = await fetch(filePath);
-        if (!response.ok) {
-            return;
-        }
-        const text = await response.text();
-        elem.innerHTML = text;
-        elem.querySelectorAll("script").forEach(script => {
-            const newScript = document.createElement("script");
-            Array.from(script.attributes).forEach(attr =>
-                newScript.setAttribute(attr.name, attr.value)
-            );
-            newScript.appendChild(
-                document.createTextNode(script.innerHTML)
-            )
-            script.parentNode.replaceChild(newScript, script);
-        })
-    } catch (err) {
-        console.error(err.message);
-    }
+async function injectHTML(filePath, elem, callback) {
+  try {
+      const response = await fetch(filePath);
+      if (!response.ok) {
+          return;
+      }
+      const text = await response.text();
+      elem.innerHTML = text;
+      
+      // Ensure that all scripts within the loaded HTML are executed
+      elem.querySelectorAll("script").forEach(script => {
+          const newScript = document.createElement("script");
+          Array.from(script.attributes).forEach(attr =>
+              newScript.setAttribute(attr.name, attr.value)
+          );
+          newScript.appendChild(
+              document.createTextNode(script.innerHTML)
+          )
+          script.parentNode.replaceChild(newScript, script);
+      });
+      
+      // Run callback if provided (e.g., load skills after injection)
+      if (typeof callback === 'function') {
+          callback();
+      }
+
+  } catch (err) {
+      console.error(err.message);
+  }
 }
 
 // async function injectHTML(filePath,elem) {
@@ -36,11 +44,45 @@ async function injectHTML(filePath,elem) {
 // injectHTML("./about.html", document.querySelector(".about"));
     
 function injectAll() {
-    document.querySelectorAll("div[include]")
-            .forEach((elem) => {
-                injectHTML(elem.getAttribute("include"),elem);
-    })
+  document.querySelectorAll("div[include]").forEach((elem) => {
+      const filePath = elem.getAttribute("include");
+      injectHTML(filePath, elem, () => {
+          // This will run after the HTML is injected
+          if (elem.id === "skills") {
+              loadSkills(); // Load skills if the section is "skills"
+          }
+      });
+  });
 }
+
+
+
+
+
+function loadSkills() {
+  const skillsContainer = document.getElementById('skills-container');
+
+  if (skillsContainer) {
+    fetch('./json_data/skills_info.json')  // Update the path to your JSON file
+      .then(response => response.json())
+      .then(data => {
+        data.skills.forEach(skill => {
+          const skillHTML = `
+            <div class="col-md-3 mb-4">
+              <img src="${skill.image}" alt="${skill.name} Logo" class="img-fluid skill-logo mb-2">
+              <h6>${skill.name}</h6>
+            </div>
+          `;
+          skillsContainer.innerHTML += skillHTML;
+        });
+      })
+      .catch(error => console.error('Error loading JSON:', error));
+  } else {
+    console.error('The skills-container element was not found.');
+  }
+}
+
+
     
 
 injectAll();
@@ -172,23 +214,3 @@ function updateCarousel(projects) {
       }
   }
 }
-
-
-
-
-// Function to fetch skills from the JSON file and load them into the HTML
-fetch('./json_data/skills_info.json')
-  .then(response => response.json())
-  .then(data => {
-    const skillsContainer = document.getElementById('skills-container');
-    data.skills.forEach(skill => {
-      const skillHTML = `
-        <div class="col-md-3 mb-4">
-          <img src="${skill.image}" alt="${skill.name} Logo" class="img-fluid skill-logo mb-2">
-          <h6>${skill.name}</h6>
-        </div>
-      `;
-      skillsContainer.innerHTML += skillHTML;
-    });
-  })
-  .catch(error => console.error('Error loading JSON:', error));
