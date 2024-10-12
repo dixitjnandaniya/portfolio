@@ -567,7 +567,7 @@ img {
   }
   
   #home p.lead {
-    color: white;
+    color: #0056b3;
     font-size: 1.5rem;
   }
   
@@ -634,7 +634,7 @@ header, footer {
 
 /* Text Colors */
 h1, h4 {
-  color: black; /* Dark Blue for headings */
+  color: #0056b3; /* Dark Blue for headings */
 }
 
 h3{
