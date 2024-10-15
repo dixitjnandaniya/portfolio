@@ -5,50 +5,115 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dixit Nandaniya's Portfolio</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 
+
+
+<!-- Navigation Bar -->
 <div include="./navigation_bar.html"></div>
 
 
-<section id="home" class="full-screen-section d-flex align-items-center text-center">
+
+
+
+<!-- Home Section -->
+<section id="home" class="full-screen-section d-flex flex-column justify-content-center align-items-center text-center">
   <div class="container">
+    <p class="lead">Hello, I'm</p>
     <h1 class="display-1">DIXIT NANDANIYA</h1>
-    <p class="lead">DATA SCIENTIST, PYTHON DEVELOPER & ALGO TRADING</p>
-  </div>
-  <div class="container text-center mt-5">
-    <button class="btn btn-outline-light btn-lg mx-2">Hire Me</button>
-    <button class="btn btn-outline-light btn-lg mx-2">Get Resume</button>
+    <p class="lead">Data Scientist & Python Developer</p>
+    <div class="button-group mt-4">
+      <a href="./resources/DIXIT_NANDANIYA_CV.pdf" class="btn btn-outline-dark btn-lg mx-2" download="DIXIT_NANDANIYA_CV.pdf">Download CV</a>
+      <a href="#contact" class="btn btn-dark btn-lg mx-2">Contact Info</a>
+    </div>
+    <div class="social-links mt-4">
+      <a href="https://www.linkedin.com/in/dixit-nandaniya-b54a03312/" target="_blank" class="btn btn-outline-dark btn-lg mx-2">
+        <img src="images/icons/linkedin.png" alt="LinkedIn" width="24"> 
+      </a>
+      <a href="https://github.com/dixituwindsor/" target="_blank" class="btn btn-outline-dark btn-lg mx-2">
+        <img src="images/icons/github.png" alt="GitHub" width="24"> 
+      </a>
+    </div>
   </div>
 </section>
 
 
+
+
+
+<!-- About Section -->
 <div id="about" class="full-screen-section" include="./about.html"></div>
-<!-- <div class="full-screen-section"> -->
-  <section id="projects" class="projects-section bg-light py-5">
-    <div class="container">
-      <h2 class="text-center mb-5">Projects</h2>
-      <div class="text-center mb-4">
-        <button class="btn btn-outline-primary category-btn mx-1" data-category="All">All</button>
-        <button class="btn btn-outline-primary category-btn mx-1" data-category="Artificial Intelligence">Artificial Intelligence</button>
-        <button class="btn btn-outline-primary category-btn mx-1" data-category="Python">Python</button>
-        <button class="btn btn-outline-primary category-btn mx-1" data-category="Android Applications">Android Applications</button>
-        <button class="btn btn-outline-primary category-btn mx-1" data-category="Web Development">Web Development</button>
-        <button class="btn btn-outline-primary category-btn mx-1" data-category="Algo Trading">Algo Trading</button>
-      </div>
 
-      <div id="projectsCarousel" class="carousel slide" data-ride="carousel"></div>
 
+
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light py-5">
+  <div class="container">
+    <h2 class="text-center projects-heading">Projects</h2>
+    <div class="text-center mb-4">
+      <button class="btn btn-outline-primary category-btn mx-1" data-category="All">All</button>
+      <button class="btn btn-outline-primary category-btn mx-1" data-category="Artificial Intelligence">Artificial Intelligence</button>
+      <button class="btn btn-outline-primary category-btn mx-1" data-category="Python">Python</button>
+      <button class="btn btn-outline-primary category-btn mx-1" data-category="Android Applications">Android Applications</button>
+      <button class="btn btn-outline-primary category-btn mx-1" data-category="Web Development">Web Development</button>
+      <button class="btn btn-outline-primary category-btn mx-1" data-category="Algo Trading">Algo Trading</button>
     </div>
-  </section>
-<!-- </div> -->
+
+    <div id="projectsCarousel" class="carousel slide" data-ride="carousel"></div>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- Skills Section -->
 <div id="skills" class="full-screen-section" include="./skills.html"></div>
-<div id="contact" include="./contact.html"></div>
 
 
-<!-- Bootstrap JS and dependencies -->
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h5 class="section-title">Get in Touch</h5>
+    <h3 class="contact-title">Contact Me</h3>
+  
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <div class="contact-item">
+        <a href="mailto:dixitnandaniya2001@gmail.com" class="contact-link">
+          <i class="fas fa-envelope"></i> dixitnandaniya2001@gmail.com
+        </a>
+      </div>
+      <div class="contact-item">
+        <a href="tel:+12269610979" class="contact-link">
+          <i class="fas fa-phone-alt"></i> +1 (226) 961-0979
+        </a>
+      </div>
+      <div class="contact-item">
+        <a href="https://www.linkedin.com/in/dixit-nandaniya-b54a03312/" class="contact-link" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+  
+    <p class="footer-text">Copyright © 2024 Dixit Nandaniya. All Rights Reserved.</p>
+  </div>
+</section>
+
+
+
+
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

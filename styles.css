@@ -1,136 +1,5 @@
-.about-section {
-    text-align: center;
-    padding: 50px 0;
-}
-.about-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-.about-section img {
-    width: 200px; /* Adjust the size as needed */
-    height: 200px;
-    border-radius: 50%; /* Makes the image round */
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.about-section p {
-    color: #333;
-}
-
-  /* Additional CSS for Projects Section */
-.projects-section h2 {
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-}
-.card {
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
-}
-.card-img-top {
-    max-height: 180px; /* Adjust this value to fit the image properly in the card */
-    object-fit: cover; /* This makes sure the image covers the area properly */
-}
-.card-body {
-    padding: 15px;
-}
-.card-title {
-    font-size: 1.25rem;
-}
-.card-text {
-    margin-bottom: 15px;
-}
-
-/* Additional CSS for Skills Section */
-.skills-section h2 {
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-}
-.skills-section .card {
-    height: 100%;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-.skills-section .card-img-top {
-    padding: 20px; /* Add padding around your images if needed */
-    background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
-    height: 180px; /* Fixed height for consistency */
-    object-fit: contain; /* This will make sure the image is scaled properly within the container */
-}
-.skills-section .card-body {
-    padding: 15px;
-}
-.skills-section .card-title {
-    font-size: 1.25rem;
-    margin-bottom: 15px;
-}
-.skills-section .btn-outline-primary {
-    color: #007bff;
-    border-color: #007bff;
-}
-.skills-section .btn-outline-primary:hover {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-/* Additional CSS for Contact Section */
-.contact-section {
-    padding: 50px 0;
-}
-.contact-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-}
-.contact-section p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-.social-icon {
-    width: 50px; /* Size of your icons */
-    margin-bottom: 10px;
-}
-/* Hover effect for icons */
-.social-icon:hover {
-    opacity: 0.7;
-}
-/* Style for links in the Contact section */
-.contact-section a {
-    color: #fff;
-    text-decoration: none; /* Removes underline from links */
-    display: inline-block; /* Allows for margin on the bottom */
-    margin-bottom: 10px;
-}
-.contact-section a:hover {
-    color: #ddd; /* Color when hovering over the link */
-}
-
-/* CSS for Sticky Navbar */
-.navbar {
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
-}
-
-/* Ensure padding is added to body to avoid content being hidden behind the navbar */
-body { 
-    padding-top: 56px; /* Adjust this value based on the height of your navbar */
-}
-
-/* Smooth scroll */
 html {
     scroll-behavior: smooth;
-}
-
-/* Style for navigation bar links */
-.navbar-nav .nav-link {
-    color: white;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #f8f9fa; /* Slightly lighter white when hovering over links */
-}
-
-/* Media query for responsive navbar collapsing */
-@media (max-width: 992px) {
-    .navbar-collapse {
-    background-color: #343a40; /* Same as navbar color for seamless look */
-    }
 }
 
 .carousel-item .card {
@@ -213,7 +82,7 @@ body {
 
 /* Adding margin between filter buttons and project cards */
 .projects-section .container {
-    margin-top: 20px;  /* Space above the carousel */
+    margin-top: 0px;  /* Space above the carousel */
 }
 
 /* Fix project card width issues that might be causing overflow */
@@ -246,7 +115,7 @@ body {
 /* Adjust carousel controls to fit new layout */
 .carousel-control-prev, .carousel-control-next {
   background-color: transparent; /* Make sure the background remains transparent */
-    filter: invert(100%) brightness(100%) contrast(100%);
+    /* filter: invert(100%) brightness(100%) contrast(100%); */
     width: 2.5%;  /* Reduce the width of the clickable area to finer control */
 }
 
@@ -313,10 +182,10 @@ img {
 }
 
   /* Full-screen height and dark background for the home section */
-  #home {
+  /* #home {
     position: relative;
     min-height: 100vh;
-    background: url('images/homepage.jpg') no-repeat center center fixed;
+    background: url('images/background.jpg') no-repeat center center fixed;
     background-size: cover;
     color: white;
     display: flex;
@@ -339,12 +208,12 @@ img {
   #home .container {
     position: relative;
     z-index: 2;
-  }
+  } */
 
-  #projects {
+  /* #projects {
     position: relative;
     min-height: 100vh;
-    background: url('images/project_background.jpg') no-repeat center center fixed;
+    background: url('images/background.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -365,7 +234,8 @@ img {
   #projects .container {
     position: relative;
     z-index: 2;
-  }
+  } */
+  
 
   #home h1 {
     font-size: 6rem;
@@ -376,30 +246,27 @@ img {
 
   #home p.lead {
     font-size: 1.5rem;
-    margin-top: 20px;
     letter-spacing: 0.05rem;
   }
 
   /* Styling the navigation links */
   .navbar-nav .nav-link {
-    color: white !important; /* Make sure the text is white and visible */
+    color: black !important; /* Make sure the text is white and visible */
     font-size: 1.1rem;
     margin-left: 20px;
-    text-transform: lowercase;
   }
 
   .navbar-nav .nav-link:hover {
-    color: #f8d21d !important; /* Ensure the hover color is visible */
+    color: #2b15f5 !important; /* Ensure the hover color is visible */
   }
 
   .navbar-brand {
     font-weight: bold;
     letter-spacing: 0.1rem;
-    color: white !important; /* Ensure the brand name is also visible */
+    color: black !important; /* Ensure the brand name is also visible */
   }
-
-  .navbar-custom {
-    background-color: #314961; /* Replace with your preferred color */
+  .navbar-brand:hover {
+    color: #2b15f5 !important;
   }
 
   .btn-outline-light {
@@ -438,10 +305,10 @@ img {
   .category-btn {
     border-radius: 20px;
     padding: 10px 20px;
-    font-size: 14px;
+    font-size: 15px;
     transition: background-color 0.3s, color 0.3s;
-    border-color: rgb(255, 255, 255);
-    color: #0056b3;
+    border-color: black;
+    color: black;
     background-color: white;
   }
   
@@ -451,8 +318,8 @@ img {
   }
   
   .btn-primary {
-    border-radius: 25px; /* Make buttons rounded */
-    background-color: #007bff;
+    border-radius: 15px; /* Make buttons rounded */
+    background-color: #58a6fa;
     border-color: black;
   }
   
@@ -463,7 +330,7 @@ img {
 
   .card {
     width: 100%; /* Take full width inside the column */
-    height: 400px; /* Set a fixed height for all cards */
+    height: 350px; /* Set a fixed height for all cards */
     display: flex;
     flex-direction: column; /* Align content vertically */
     justify-content: space-between; /* Spread content evenly */
@@ -476,7 +343,7 @@ img {
   }
   
   .card img {
-    height: 150px; /* Fix the height for the image at the top */
+    height: 130px; /* Fix the height for the image at the top */
     object-fit: cover; /* Ensure the image scales correctly without distortion */
   }
 
@@ -488,7 +355,7 @@ img {
   }
   
   .card-title {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: bold;
     margin-bottom: 10px;
   }
@@ -500,10 +367,6 @@ img {
     line-height: 1.5; /* Add some spacing between the lines */
     margin-bottom: 15px; /* Ensure space between text and the button */
   }
-
-  .card-text li {
-      margin-bottom: 5px; /* Space between each bullet point */
-  }
   
   .card-footer {
     margin-top: auto;
@@ -513,18 +376,13 @@ img {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
-
-  .card-img-top {
-    height: 200px;
-    object-fit: cover; /* Keeps image proportional */
-  }
   
   .carousel-item {
     padding: 10px;
   }
   
   .carousel-indicators li {
-    background-color: white;
+    background-color: #3696fc;
     width: 10px;
     height: 10px;
     border-radius: 50%; /* Make indicators round */
@@ -539,7 +397,7 @@ img {
   }
   
   .carousel-indicators {
-    bottom: -30px; /* Move the indicators below the cards */
+    bottom: -10px; /* Move the indicators below the cards */
   }
 
 
@@ -560,6 +418,7 @@ img {
     background-size: cover;
     background-position: center;
     color: white;
+    background-color: #f8f9fa;
   }
   
   #home h1 {
@@ -567,8 +426,9 @@ img {
   }
   
   #home p.lead {
-    color: #0056b3;
+    color: black;
     font-size: 1.5rem;
+    font-family: Bold;
   }
   
   /* Media query for mobile devices */
@@ -588,11 +448,16 @@ img {
   
     .navbar {
       padding: 0.5rem 1rem;
+      background-color: white; /* White background for navbar */
+      border: none;
+      box-shadow: none;
+      position: fixed;
     }
     
     .navbar-toggler {
       margin-right: 0;
     }
+  
   
     /* For ensuring the background image fits correctly */
     #home {
@@ -626,15 +491,12 @@ img {
 /* Background Colors */
 body {
   background-color: #FFFFFF; /* White background */
-}
-
-header, footer {
-  background-color: #306998; /* Python Blue for headers */
+  overflow-x: hidden !important;
 }
 
 /* Text Colors */
 h1, h4 {
-  color: #0056b3; /* Dark Blue for headings */
+  color: black; /* Dark Blue for headings */
 }
 
 h3{
@@ -642,7 +504,7 @@ h3{
 }
 
 p, a {
-  color: #204060; /* Dark Blue for body text */
+  color: black; /* Dark Blue for body text */
 }
 
 /* Accent and Border Colors */
@@ -650,12 +512,11 @@ p, a {
   color: #FFD43B; /* Yellow for accents */
 }
 
-.navbar {
-  background-color: #306998; /* Python Blue for Navbar */
-}
-
 .navbar-brand, .navbar-nav .nav-link {
-  color: #ffffff; /* White text for links */
+  font-weight: bold;
+  color: black; /* White text for links */
+  text-transform: capitalize;
+  
 }
 
 .navbar-nav .nav-link:hover {
@@ -688,7 +549,7 @@ p, a {
 
 
 .projects-section h2{
-  color: white;
+  color: black;
 }
 
 
@@ -705,16 +566,17 @@ p, a {
   text-align: center;
 }
 
-.skills-title {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #003b64;
+.skills-title {  
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  margin-top: 70px;
 }
 
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  gap: 15px;
   justify-items: center;
   margin-bottom: 40px;
 }
@@ -754,15 +616,9 @@ p, a {
   z-index: 10000;
 }
 
-
-
-
-
-
-
 .skill-logo {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 
@@ -771,56 +627,247 @@ p, a {
 
 
 
-/* Additional CSS for Contact Section */
-.contact-section {
-  min-height: 100vh; /* Ensures the section covers the full viewport height */
-  padding: 50px 0; /* Add some padding */
-  display: flex;
-  background-color: #f9f9f9; /* Light background color */
+
+
+/* Style for LinkedIn and GitHub buttons */
+.social-links a {
+  border: none;
+  background-color: transparent;
 }
 
-.contact-section h3 {
-  font-weight: bold;
-  margin-bottom: 30px;
-  font-size: 24px; /* Adjust font size */
-}
-
-.form-control {
-  border-radius: 0;
-  padding: 15px;
-  font-size: 14px;
-  margin-bottom: 20px;
+.social-links a:hover {
+  background-color: transparent;
   box-shadow: none;
-  border: 1px solid #ccc; /* Add subtle border */
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Style for buttons: Download CV and Contact Info */
+.button-group .btn {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block; /* Prevent full width stretching */
+  width: auto; /* Ensure buttons are not full width */
+  text-align: center;
+}
+
+.btn-outline-dark:hover {
+  background-color: #343a40;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-dark {
+  background-color: #343a40;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-dark:hover {
+  background-color: #5a6268;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+.about-section {
+  padding: 50px 0;
+}
+
+.container-fluid {
+  max-width: 90%;
+  margin: 0 auto;
+  align-content: center;
+}
+
+.about-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+
+/* Flex layout for About Section */
+.about-content {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure the content doesn't wrap */
+  align-items: flex-start; /* Align the image and text to the top */
+  justify-content: space-between;
+  text-align: justify;
+  gap: 20px;
+}
+
+/* Profile Image Styling */
+.about-image img {
+  width: 250px;
+  height: 350px;
+  border-radius: 3%;
+  object-fit: cover;
+}
+
+.right-side-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1; /* Make sure this content grows to take up remaining space */
+  margin-left: 50px;
+}
+
+/* Education Card */
+.education-card {
+  width: 100%; /* Ensure it takes the full available width */
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.education-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.education-logo {
+  width: 50px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.university-logo {
+  width: 40px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.education-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.education-list li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-image img {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .right-side-content {
+    width: 100%;
+  }
+}
+
+
+
+.projects-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+.contact-section {
+  padding: 0;
+  background-color: #f8f9fa;
+  min-height: 100vh; /* Ensure the section takes the full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.section-title {
+  color: black;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .contact-info {
-  margin-left: 150px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.contact-item {
+  margin: 15px 0;
+}
+
+.contact-link {
+  font-size: 1.25rem;
   color: #333;
-  text-align: left; /* Align the text to the left */
-}
-
-.contact-info li {
-  margin-bottom: 10px;
-  line-height: 1.5; /* Adjust line spacing */
-  text-align: left; /* Ensure all list items are aligned to the left */
-}
-
-.contact-info strong {
-  font-weight: bold;
+  text-decoration: none;
   display: inline-block;
-  margin-bottom: 5px; /* Add some space below the label */
-  color: #333;
-  text-align: left; /* Align the strong text to the left */
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Update button to match design */
-button[type="submit"] {
-  padding: 10px 15px;
-  font-size: 16px;
-  font-family: Arial, sans-serif;
-  border-radius: 5px;
-  text-transform: uppercase;
+.contact-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.contact-link i {
+  margin-right: 10px;
+}
+
+.footer-text {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
 }
