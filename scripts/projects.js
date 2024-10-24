@@ -11,13 +11,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (project) {
                 // Set project title
-                document.getElementById('projectTitle').innerText = project.title || 'Project Title';
-                document.getElementById('projectName').innerText = project.title || 'Project Name';
+                document.getElementById('projectTitle').innerHTML = project.title || 'Project Title';
+                document.getElementById('projectName').innerHTML = project.title || 'Project Name';
 
                 // Set subtitle if available
                 const subtitleElem = document.getElementById('projectSubtitle');
                 if (project.subtitle) {
-                    subtitleElem.innerText = project.subtitle;
+                    subtitleElem.innerHTML = project.subtitle;
                 } else {
                     subtitleElem.style.display = 'none'; // Hide subtitle section if not available
                 }
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Set introduction if available
                 const introElem = document.getElementById('projectIntroduction');
                 if (project.introduction) {
-                    introElem.innerText = project.introduction;
+                    introElem.innerHTML = project.introduction;
                 } else {
                     introElem.parentElement.style.display = 'none'; // Hide the section
                 }
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Set project background if available
                 const backgroundElem = document.getElementById('projectBackground');
                 if (project.background) {
-                    backgroundElem.innerText = project.background;
+                    backgroundElem.innerHTML = project.background;
                 } else {
                     backgroundElem.parentElement.style.display = 'none';
                 }
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (project.features && project.features.length > 0) {
                     project.features.forEach(feature => {
                         const li = document.createElement('li');
-                        li.innerText = feature;
+                        li.innerHTML = feature;
                         featuresList.appendChild(li);
                     });
                 } else {
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Populate tech stack if available
                 const techStackElem = document.getElementById('projectTechStack');
                 if (project.tech_stack) {
-                    techStackElem.innerText = project.tech_stack;
+                    techStackElem.innerHTML = project.tech_stack;
                 } else {
                     techStackElem.parentElement.style.display = 'none';
                 }
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Set development process if available
                 const developmentElem = document.getElementById('projectDevelopment');
                 if (project.development) {
-                    developmentElem.innerText = project.development;
+                    developmentElem.innerHTML = project.development;
                 } else {
                     developmentElem.parentElement.style.display = 'none';
                 }
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Set challenges faced if available
                 const challengesElem = document.getElementById('projectChallenges');
                 if (project.challenges) {
-                    challengesElem.innerText = project.challenges;
+                    challengesElem.innerHTML = project.challenges;
                 } else {
                     challengesElem.parentElement.style.display = 'none';
                 }
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Set results & impact if available
                 const resultsElem = document.getElementById('projectResults');
                 if (project.results) {
-                    resultsElem.innerText = project.results;
+                    resultsElem.innerHTML = project.results;
                 } else {
                     resultsElem.parentElement.style.display = 'none';
                 }
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Set user feedback if available
                 const feedbackElem = document.getElementById('projectFeedback');
                 if (project.feedback) {
-                    feedbackElem.innerText = project.feedback;
+                    feedbackElem.innerHTML = project.feedback;
                 } else {
                     feedbackElem.parentElement.style.display = 'none';
                 }
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Set future improvements if available
                 const improvementsElem = document.getElementById('projectImprovements');
                 if (project.improvements) {
-                    improvementsElem.innerText = project.improvements;
+                    improvementsElem.innerHTML = project.improvements;
                 } else {
                     improvementsElem.parentElement.style.display = 'none';
                 }
@@ -101,14 +101,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Set conclusion if available
                 const conclusionElem = document.getElementById('projectConclusion');
                 if (project.conclusion) {
-                    conclusionElem.innerText = project.conclusion;
+                    conclusionElem.innerHTML = project.conclusion;
                 } else {
                     conclusionElem.parentElement.style.display = 'none';
                 }
 
             } else {
                 // If no project matches the ID, show an error message
-                document.getElementById('projectName').innerText = 'Project Not Found';
+                document.getElementById('projectName').innerHTML = 'Project Not Found';
             }
         })
         .catch(error => console.error('Error fetching project data:', error));
