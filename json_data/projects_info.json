@@ -105,7 +105,11 @@
       "categories": ["Data Science", "Machine Learning", "Python", "Android Development"],
       "skills": ["Random Forest", "Data Preprocessing", "NumPy", "Pandas", "Scikit-learn"],
       "image": "images/projects/PlacementPackagePrediction/PlacementPackagePrediction.jpg",
-      "github": "https://github.com/dixituwindsor/Placement_Package_Prediction"
+      "github": "https://github.com/dixituwindsor/Placement_Package_Prediction",
+      "media": {
+        "type": "ppt",
+        "path": "https://docs.google.com/presentation/d/1Kv-vCoUgFFg30vWAPanc9pNgc490Enqj/edit?usp=sharing&ouid=104870617554992213042&rtpof=true&sd=true"
+      }
     },
 
     {
