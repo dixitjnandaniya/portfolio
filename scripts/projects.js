@@ -22,6 +22,17 @@ document.addEventListener('DOMContentLoaded', function () {
                     subtitleElem.style.display = 'none'; // Hide subtitle section if not available
                 }
 
+
+                const githubLinkElem = document.getElementById('githubLink');
+                if (project.github) {
+                    githubLinkElem.href = project.github;
+                    githubLinkElem.innerHTML = project.github; // Display only the URL in blue
+                    document.getElementById('githubContainer').style.display = 'block'; // Ensure container is displayed
+                } else {
+                    document.getElementById('githubContainer').style.display = 'none'; // Hide if no GitHub link is available
+                }
+
+
                 // Set introduction if available
                 const introElem = document.getElementById('projectIntroduction');
                 if (project.introduction) {
@@ -29,6 +40,41 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else {
                     introElem.parentElement.style.display = 'none'; // Hide the section
                 }
+
+
+                // <iframe src="https://1drv.ms/p/c/82e1d7f32278ddf7/IQSz6EhD3XzWTb41EGuFGu3_AXxqVASf3iG67-NeZm64ZS4?em=2&amp;wdAr=1.7777777777777777" width="476px" height="250px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+
+
+                const mediaElem = document.getElementById('projectMedia');
+                if (project.media) {
+                    const { type, path } = project.media;
+
+                    console.log("path: ", path)
+
+                    let mediaHTML = '';
+
+                    if (type === 'pdf') {
+                        mediaHTML = `<iframe src="${path}" width="100%" height="600px" class="embed-responsive-item"></iframe>`;
+                    } else if (type === 'ppt') {
+                        const previewPath = path.replace('/edit', '/preview');
+                        mediaHTML = `<iframe src="${previewPath}" width="100%" height="500px" class="embed-responsive-item"></iframe>`;
+                    } else if (type === 'jpg' || type === 'png') {
+                        mediaHTML = `<img src="${path}" alt="Project Image" class="img-fluid">`;
+                    } else if (type === 'video') {
+                        mediaHTML = `<video controls width="100%" class="embed-responsive-item">
+                                         <source src="${path}" type="video/mp4">
+                                         Your browser does not support the video tag.
+                                     </video>`;
+                    } else {
+                        mediaHTML = `<p>Unsupported media type: ${type}</p>`;
+                    }
+
+                    mediaElem.innerHTML = mediaHTML;
+                } else {
+                    mediaElem.style.display = 'none'; // Hide if no media is available
+                }
+
+
 
                 // Set project background if available
                 const backgroundElem = document.getElementById('projectBackground');

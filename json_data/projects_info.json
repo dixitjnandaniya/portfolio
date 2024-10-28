@@ -1,270 +1,287 @@
 {
-    "projects": [
-      {
-        "id": "YouTubeDataAnalysis",
-        "title": "YouTube Data Analysis",
-        "subtitle": "Unlocking YouTube Content Trends through Country-Wise Data Analysis",
-        "introduction": "<span style=\"white-space: pre;\">\t</span>YouTube stands as a global leader in video content, with millions of users from all over the world contributing to its vast and diverse platform. The YouTube Data Analysis – Country-Wise Content Trends project aims to address the need for deeper insights into regional content trends by building a comprehensive data analysis system. Through this project, marketers, content creators, and researchers can gain valuable insights into the type of content that resonates most in specific countries, using data collected from YouTube’s API and stored on Amazon Web Services (AWS) for scalable analysis.",
-        "background": "<span style=\"white-space: pre;\">\t</span>The rapid growth of YouTube has made it essential for content creators, researchers, and marketers to understand the dynamics of video popularity in different regions. Existing tools, while helpful, do not offer sufficient country-specific insights, making it difficult to identify trends. This project is designed to fill that gap by building an efficient data processing system that retrieves, stores, and analyzes YouTube trending data on a country-by-country basis. The insights derived from this analysis help marketers optimize their targeting strategies and enable content creators to tailor their work for specific audiences.",
-        "features": [
-          "<strong>YouTube API Integration:</strong> The system fetches real-time trending data directly from YouTube for different countries using a Python-based API script.",
-          "<strong>AWS Storage & Processing:</strong> Data is securely stored in AWS S3 buckets and processed using AWS Glue, Lambda, and Athena, ensuring scalability and performance.",
-          "<strong>Visualization via AWS QuickSight:</strong> Data trends are visualized through interactive charts and graphs, helping users easily interpret country-wise content patterns.",
-          "<strong>Automated Data Pipeline:</strong> The system automatically imports trending video data on a daily basis, ensuring that the data is up-to-date.",
-          "<strong>Data Security:</strong> AWS infrastructure ensures the secure handling of sensitive data, adhering to YouTube API compliance guidelines."
-        ],
-        "tech_stack": "The project utilizes several key technologies:<br><br><strong>1. Python:</strong> Used for developing the script that interacts with the YouTube API and automates data collection.<br><strong>2. AWS (Amazon Web Services):</strong> S3 for data storage, Glue for data transformation, Athena for querying, and QuickSight for visualizations.<br><strong>3. YouTube API:</strong> Provides access to video metadata such as view counts, likes, dislikes, and more.",
-        "development": "<strong>1. Data Collection:</strong> A Python script was developed to fetch real-time data from YouTube’s API, which is stored in an AWS S3 bucket.<br><strong>2. Data Transformation:</strong> AWS Glue and Lambda functions were used to clean and transform the raw data, converting it from CSV to Parquet format for optimized queries.<br><strong>3. Data Storage:</strong> Cleaned and processed data is stored in partitioned S3 buckets for easy querying.<br><strong>4. Data Visualization:</strong> AWS QuickSight was used to create visualizations, including charts and graphs that showcase trends such as video views, likes, and content categories by country.<br><strong>5. Security Measures:</strong> AWS security features ensure that all data is securely handled, with access control managed via IAM (Identity and Access Management).",
-        "challenges": "The project encountered several challenges:<br><br><strong>1. Data Volume:</strong> Managing large volumes of YouTube data, especially with country-wise partitioning, proved challenging in terms of performance.<br><strong>2. Data Quality:</strong> Ensuring data consistency when transforming from CSV and JSON to Parquet format was difficult.<br><strong>3. Historical Data:</strong> YouTube’s API does not provide historical data, so the team had to rely on third-party sources to fill in gaps in past data.",
-        "results": "<span style=\"white-space: pre;\">\t</span>The system successfully created a scalable and efficient platform for analyzing country-wise YouTube trends. The visualizations generated from AWS QuickSight allow for an intuitive understanding of content preferences in various regions. This system is particularly valuable for marketers looking to fine-tune their advertising campaigns and for content creators aiming to tailor their videos to specific audiences. By offering real-time insights, this project helps users stay ahead of emerging content trends.",
-        "feedback": "<span style=\"white-space: pre;\">\t</span>Users have praised the system for its easy-to-use interface and the depth of insights it provides. Marketers found the tool particularly useful for identifying regional trends, while content creators used the data to adjust their production strategies, leading to increased engagement on their videos.",
-        "improvements": "Looking ahead, the team plans to:<br><br><strong>1. Expand Analytical Capabilities:</strong> Develop a more robust web-based interface with additional features such as date-range filtering and advanced analytics for trend discovery.<br><strong>2. Historical Data:</strong> Continue to explore ways to incorporate historical data into the analysis, providing a more comprehensive view of content trends over time.<br><strong>3. Enhanced User Interface:</strong> Create a more interactive and user-friendly web interface that allows for advanced data exploration and real-time updates.",
-        "conclusion": "<span style=\"white-space: pre;\">\t</span>The YouTube Data Analysis – Country-Wise Content Trends project has successfully leveraged AWS and the YouTube API to provide valuable insights into video content trends across different regions. By creating a scalable, secure, and efficient data analysis system, this project paves the way for deeper exploration into how different audiences engage with YouTube content globally. The future development of this project will bring even more advanced tools to help marketers, content creators, and researchers navigate the ever-evolving world of digital content.",
-        "categories": ["AWS", "Data Science"],
-        "skills": ["YouTube API", "Amazon Web Services", "Data Analysis", "Data Processing Pipeline", "Real-time Data Handling"],
-        "image": "images/projects/YouTubeDataAnalysis/YouTubeDataAnalysis.jpg",
-        "link": "./projects.html"
-      },
-            
-      
-      {
-        "id": "PlantDiseaseDetection",
-        "title": "Plant Disease Detection",
-        "subtitle": "AI-Powered Plant Disease Detection for Backyard Farmers",
-        "introduction": "<span style=\"white-space: pre;\">\t</span>Backyard farming is a popular activity among Canadians, especially during the summer, offering the opportunity to cultivate plants in an organic and natural environment. However, the lack of experience in identifying plant diseases poses a significant challenge to amateur farmers. The Plant Disease Detection for Backyard Farmers project aims to address this issue by developing an Android application that accurately detects plant diseases using artificial intelligence, empowering novice farmers to manage their crops efficiently.",
-        "background": "<span style=\"white-space: pre;\">\t</span>The idea for this project stemmed from the growing popularity of backyard farming and the need for novice farmers to access reliable tools for plant disease identification. Farmers often struggle to diagnose diseases early enough to prevent damage to their crops. By leveraging AI technology, the project aims to offer an easy-to-use mobile application that can detect plant diseases with high accuracy and provide useful insights, ensuring the health of their plants.",
-        "features": [
-          "<strong>ResNet-9 Model:</strong> The application uses the ResNet-9 deep learning model, known for its ability to classify images with a high accuracy rate of 99.2%.",
-          "<strong>Image-Based Detection:</strong> The system analyzes images captured via the user's phone camera, providing instant results regarding plant health.",
-          "<strong>User-Friendly Interface:</strong> Designed with the user in mind, the app is easy to navigate, making it suitable for non-technical users.",
-          "<strong>Sustainable Farming:</strong> By identifying plant diseases early, the app helps farmers take timely action, thus promoting sustainable farming practices."
-        ],
-        "tech_stack": "<span style=\"white-space: pre;\">\t</span>The project was developed using ResNet-9 for image classification, with the trained model integrated into an Android application. PyTorch was used for model training, while Kaggle's PlantVillage dataset was employed for testing and validation. The Android application serves as the front-end for users to upload images and receive results.",
-        "development": "<strong>1. Data Collection and Preprocessing:</strong> The dataset consists of 87,000 images of healthy and diseased crop leaves, classified into 38 categories. These images were normalized and divided into training, validation, and test sets.<br><strong>2. Model Selection:</strong> The ResNet-9 model was chosen for its ability to overcome overfitting and vanishing gradient issues, making it ideal for deep neural networks. Data augmentation techniques like shifting, flipping, and zooming were applied to improve model generalization.<br><strong>3. Training and Optimization:</strong> The training process involved the use of batch normalization and gradient descent to enhance performance. A One Cycle Learning Rate Policy was implemented to ensure efficient learning and prevent overfitting.<br> <strong>4. Android Integration:</strong> After training, the model was integrated into an Android app, allowing users to upload plant images and receive instant feedback on potential diseases.",
-        "challenges": "The project encountered several challenges, including:<br><br><strong>1. Model Selection:</strong> Finding a balance between accuracy and performance required extensive research. The ResNet-9 model was ultimately selected for its high accuracy in image classification.<br><strong>2. Overfitting Issues:</strong> The initial model overfitted the data, necessitating the use of learning rate scheduling and other optimization techniques.<br><strong>3. Deployment Difficulties:</strong> Integration into the Android app posed connectivity issues, which were resolved by developing a Python API to handle image processing and model execution on a local machine with a dedicated GPU.",
-        "results": "<span style=\"white-space: pre;\">\t</span>The Plant Disease Detection application achieved an accuracy rate of 99.2% in identifying various plant diseases, providing timely and accurate diagnoses to backyard farmers. By offering a reliable tool for disease detection, the project supports sustainable farming practices and empowers novice farmers to make informed decisions about their crops.",
-        "feedback": "<span style=\"white-space: pre;\">\t</span>Farmers testing the prototype app reported positive outcomes, noting the ease of use and accuracy of the disease detection. The system's quick response time allowed them to address plant health issues before they escalated, improving the overall health of their crops.",
-        "improvements": "Looking forward, the team plans to:<br><br><strong>1. Expand the Dataset:</strong> Incorporate more plants and diseases to increase the model's coverage and ensure relevance for a broader range of users.<br><strong>2. Enhance the Android Application:</strong> Add features that allow users to capture images directly within the app, improving convenience and real-time functionality.<br><strong>3. Personalized Recommendations:</strong> Offer suggestions for disease management based on the detected issues, helping farmers take proactive steps to protect their plants.",
-        "conclusion": "<span style=\"white-space: pre;\">\t</span>The Plant Disease Detection for Backyard Farmers project showcases the potential of artificial intelligence in supporting sustainable and efficient farming practices. With its highly accurate disease detection and user-friendly interface, the application provides amateur farmers with a valuable tool for safeguarding their crops. The team's future plans for expanding the app's capabilities further emphasize the ongoing commitment to helping farmers thrive with the aid of AI-driven technology.",
-        "categories": ["Artificial Intelligence", "Python", "Data Science"],
-        "skills": ["ResNet-9 Model", "Image Processing", "Android Development", "PyTorch", "Machine Learning Model Integration"],
-        "image": "images/projects/PlantDiseaseDetection/PlantDiseaseDetection.jpg",
-        "link": "./projects.html"
-      },
-      
-      
-      {
-        "id": "DiabetesDiseasePrediction",
-        "title": "Diabetes Disease Prediction",
-        "subtitle": "Diabetes Disease Prediction using Machine Learning on Big Data of Healthcare",
-        "introduction": "<span style=\"white-space: pre;\">\t</span>This review paper provides a comprehensive analysis of the study 'Diabetes Disease Prediction using Machine Learning on Big Data of Healthcare.' The essay's goal is to critically evaluate and list the benefits and drawbacks of the original work. The essay also implements the algorithms from the research article, compares several machine learning techniques, and recommends a novel strategy to address current issues. The goal of this study is to provide a complete survey that will help readers have a better grasp of diabetes prediction and its advances in the healthcare industry.",
-        "background": "<span style=\"white-space: pre;\">\t</span>Millions of individuals throughout the world struggle with diabetes, a serious health issue. It is a chronic condition caused by the body's inability to make enough insulin or use it appropriately, which raises blood sugar levels. Diabetes can have harmful effects on the body's organs, such as renal failure, blindness, and heart disease. Machine learning has the potential to help address the problem of diabetes by accurately predicting the disease and providing automated diagnosis under the validation of a professional doctor.",
-        "features": [
-          "<strong>Machine Learning Models:</strong> Several machine learning algorithms, such as Naive Bayes, Support Vector Machine, Random Forest, and Simple CART, were implemented to create a classifier model for diabetes prediction.",
-          "<strong>WEKA Tool:</strong> The WEKA tool was used for building and comparing these models, identifying Support Vector Machine as the most accurate model for predicting diabetes.",
-          "<strong>Big Data in Healthcare:</strong> The study focuses on big data analysis in the healthcare sector and how machine learning can extract meaningful patterns from it.",
-          "<strong>Comprehensive Comparison:</strong> A detailed comparison of various machine learning techniques for diabetes prediction was provided, evaluating their strengths and weaknesses."
-        ],
-        "tech_stack": "The study applied machine learning models using the WEKA tool. The implementation phase used Python, with several models developed using the Dataspell IDE for comparison. Key models included:<br><br><strong>1.</strong> Fully Connected Neural Network (CNN)<br><strong>2.</strong> Long Short-Term Memory (LSTM)<br><strong>3.</strong> K-Nearest Neighbors (KNN)<br><strong>4.</strong> Logistic Regression<br><strong>5.</strong> Support Vector Machine (SVM)<br><strong>6.</strong> Random Forest<br><strong>7.</strong> Naive Bayes<br><strong>8.</strong> Simple CART<br><strong>9.</strong> XGBoost<br><strong>10.</strong> CatBoost",
-        "development": "<strong>1. Model Selection:</strong> Various machine learning models were selected for the study, including traditional models like Logistic Regression and advanced ones like CNN and LSTM.<br><strong>2. Performance Evaluation:</strong> The models were evaluated using metrics like accuracy, true positive rate (recall), false positive rate, precision, and F-Measure to compare their effectiveness.<br><strong>3. Comparison of Models:</strong> Naive Bayes showed the highest accuracy at 76.62%, while XGBoost had the lowest accuracy at 68.83%.<br><strong>4. Feature Engineering:</strong> The dataset was processed to ensure the accuracy and reliability of the machine learning models, focusing on handling big healthcare data efficiently.",
-        "challenges": "Some challenges encountered during the project were:<br><br><strong>1. Data Volume:</strong> The healthcare dataset was large, and processing it with different machine learning models required optimized handling.<br><strong>2. Model Performance:</strong> While certain models like Naive Bayes and SVM performed well, others like XGBoost showed lower performance due to the nature of the dataset.<br><strong>3. Data Privacy:</strong> Managing and processing sensitive healthcare data required ensuring security and privacy throughout the experiment.",
-        "results": "The models were evaluated on various performance metrics, and the results showed that:<br><br>- Naive Bayes had the highest accuracy (76.62%) and F-Measure (68.42%).<br>- Simple CART achieved the highest recall rate (72.73%).<br>- Support Vector Machine had the lowest false positive rate (18.18%) and highest precision (66.67%).<br>- XGBoost had the lowest accuracy (68.83%) and precision (55.38%).",
-        "feedback": "<span style=\"white-space: pre;\">\t</span>The study demonstrated the potential of machine learning in predicting diabetes using big healthcare data. Users appreciated the comparison of models and the detailed performance evaluation, which highlighted areas where models like Naive Bayes and SVM excelled. However, there were suggestions to improve the overall accuracy by experimenting with other machine learning techniques.",
-        "improvements": "Future work should focus on:<br><br><strong>1. Data Privacy Solutions:</strong> Addressing the issues of security and privacy when handling large-scale medical datasets.<br><strong>2. Exploring Advanced Models:</strong> Exploring other machine learning algorithms or methodologies to improve accuracy, such as deep learning models with more layers.<br><strong>3. Enhancing Data Quality:</strong> Improving the dataset quality and volume for better training, which can lead to more reliable predictions.",
-        "conclusion": "<span style=\"white-space: pre;\">\t</span>The Diabetes Disease Prediction project provided a useful comparison of various machine learning models for healthcare data. By leveraging big data in healthcare and employing machine learning techniques, the study offers insights into improving diabetes prediction models. However, future research is needed to refine these models and address challenges such as data privacy and the incorporation of more advanced techniques.",
-        "categories": ["Artificial Intelligence", "Python", "Data Science"],
-        "skills": ["Machine Learning Algorithms", "Scikit-learn", "Data Preprocessing", "Random Forest", "Naive Bayes Classification"],
-        "image": "images/projects/DiabetesDiseasePrediction/DiabetesDiseasePrediction.jpg",
-        "link": "./projects.html"
-      },
-
-      
-      {
-        "id": "PlacementPackagePrediction",
-        "title": "Placement Package Prediction",
-        "subtitle": "Placement Package Prediction System: A Machine Learning Approach",
-        "introduction": "<span style=\"white-space: pre;\">\t</span>The Placement Package Prediction System is a machine learning-based model designed to predict the placement package a student will receive during campus placements. By using previous years' student placement data, the system provides a predictive model that takes into account a student's academic performance, achievements, project work, and extracurricular activities. This model is integrated into an Android application, allowing students to input their data and receive an estimated package prediction.",
-        "background": "<span style=\"white-space: pre;\">\t</span>Placements are a key metric of success for colleges, with students making admissions decisions based on an institution's placement records. The project aims to support this process by providing an analysis and prediction model for placement packages, based on historical data. By using machine learning techniques, the system can provide students with insights into their expected package based on a variety of factors, including CGPA, projects, and more. The algorithms are trained using data from the past two years of student placements.",
-        "features": [
-          "<strong>Android Integration:</strong> The machine learning model is integrated into an Android application, allowing students to input data and receive predictions on-the-go.",
-          "<strong>Machine Learning Model:</strong> The model is trained on previous placement data using supervised learning techniques to predict a student's package.",
-          "<strong>Predictive Insights:</strong> Based on student academic performance, projects, and activities, the system provides a predicted package amount.",
-          "<strong>User-Friendly Interface:</strong> Students can easily input their details and obtain predictions using an intuitive interface designed for accessibility."
-        ],
-        "tech_stack": "The Placement Package Prediction System uses the following technologies:<br><br><strong>1. Python</strong> for building the machine learning model.<br><strong>2. Jupyter Notebook</strong> for developing and testing the machine learning algorithms.<br><strong>3. Android Studio</strong> for creating the mobile application.<br><strong>4. NumPy, Pandas, and Scikit-learn</strong> for data processing and machine learning.<br><strong>5. Matplotlib</strong> for visualizing results and performance of the model.",
-        "development": "<strong>1. Data Gathering:</strong> The placement data from the past two years, comprising over 100 instances of student records, was collected from the placement department of the college.<br><strong>2. Pre-Processing:</strong> Data pre-processing involved cleaning the dataset, handling missing values using the Imputer class from Scikit-learn, and selecting relevant attributes such as CGPA, backlogs, project work, and placement status.<br><strong>3. Model Training:</strong> The dataset was split into training and test sets, with 80% used for training and 20% for testing. Feature scaling was applied to ensure consistent results across different attributes.<br><strong>4. Algorithm Selection:</strong> Various algorithms were tested, including Random Forest and Ensemble Learning techniques (boosting and bagging). The Random Forest Classifier provided the best results for the placement package prediction.",
-        "challenges": "Several challenges were faced during the development process:<br><br><strong>1. Data Quality:</strong> Handling missing and incomplete data was a key challenge, as it required careful cleaning and preprocessing to ensure accurate model training.<br><strong>2. Model Accuracy:</strong> Ensuring that the machine learning model produced reliable predictions involved testing different algorithms and fine-tuning hyperparameters for better results.<br><strong>3. Integration:</strong> Integrating the machine learning model into the Android application required seamless communication between the front-end and back-end to ensure user inputs were processed efficiently.",
-        "results": "<span style=\"white-space: pre;\">\t</span>The Placement Package Prediction System successfully predicts the package a student is likely to receive during campus placements, providing an estimated figure based on historical data. The system achieved satisfactory accuracy using the Random Forest Classifier, and its predictions were found to be useful for students preparing for placements.",
-        "feedback": "<span style=\"white-space: pre;\">\t</span>Users of the system appreciated the ease of use provided by the Android application, as well as the insights offered by the predictive model. The system gave students a clear idea of their potential placement outcomes, allowing them to plan and prepare accordingly.",
-        "improvements": "Future improvements for the project include:<br><br><strong>1. Enhancing Data Accuracy:</strong> By incorporating additional factors such as internship experience, extracurricular achievements, and soft skills, the prediction accuracy can be improved.<br><strong>2. Expanding the Dataset:</strong> Increasing the size of the dataset by including more years of placement records would result in better model training and more reliable predictions.<br><strong>3. Real-Time Feedback:</strong> Integrating a feedback loop that allows students to update their profiles in real-time and get updated predictions would improve the system's usability.",
-        "conclusion": "<span style=\"white-space: pre;\">\t</span>The Placement Package Prediction System provides a useful tool for students preparing for campus placements. By leveraging machine learning, the system offers predictive insights based on historical placement data, giving students an idea of their expected package. The integration of this system into an Android application makes it accessible and user-friendly, though future enhancements can further improve its accuracy and features.",
-        "categories": ["Artificial Intelligence", "Android Applications", "Python", "Data Science"],
-        "skills": ["Random Forest", "Data Preprocessing", "NumPy, Pandas, Scikit-learn", "Keras", "Tkinter"],
-        "image": "images/projects/PlacementPackagePrediction/PlacementPackagePrediction.jpg",
-        "link": "./projects.html"
-      },
-      
-      
-      {
-        "id": "MLKIDA",
-        "title": "ML K.I.D.A.",
-        "subtitle": "Enhancing Agricultural Efficiency with Automated Mite Detection",
-        "introduction": "<span style=\"white-space: pre;\">\t</span>In the world of agriculture, early detection of crop-damaging pests like mites is critical to maintaining crop health. Traditional pest management methods rely on human observation, which is time-consuming and prone to error. ML K.I.D.A. leverages cutting-edge machine learning techniques to automate the detection of mites, ensuring timely intervention and reducing crop losses.",
-        "background": "<span style=\"white-space: pre;\">\t</span>As crop yields become increasingly threatened by pests, agricultural technology needs to keep pace. The idea for ML K.I.D.A. arose from a desire to provide farmers with a smarter, more efficient solution for pest detection, one that requires minimal manual input but delivers high-accuracy results.",
-        "features": [
-          "<strong>YOLOv8 Object Detection:</strong> Detects mites in real-time using a state-of-the-art deep learning model, offering high accuracy even in challenging environments.",
-          "<strong>Deep Sort Algorithm:</strong> Tracks mites across video frames, allowing farmers to monitor the movement and growth of infestations.",
-          "<strong>Django Web Integration:</strong> The project integrates with Django to provide a web-based interface, making the system accessible from any device with an internet connection.",
-          "<strong>Data Annotation with Roboflow:</strong> Ensures high-quality training data through precise image annotation and preprocessing, improving the accuracy of mite detection.",
-          "<strong>Real-time Notifications:</strong> Alerts farmers when mite activity is detected, enabling prompt action and reducing the risk of crop damage."
-        ],
-        "tech_stack": "<span style=\"white-space: pre;\">\t</span>The project was developed using Python for its machine learning capabilities, Django for the web interface, YOLOv8 for object detection, and Deep Sort for tracking. Roboflow was employed for data preprocessing, ensuring the model was trained on high-quality images.",
-        "development": "<span style=\"white-space: pre;\">\t</span>The development process began with gathering and annotating large datasets of images showing mites on various crops. The YOLOv8 model was trained using these images to ensure it could accurately identify mites under diverse conditions. Continuous iterations and optimizations were made to improve the tracking algorithm, making sure it performed well in real-time environments.",
-        "challenges": "<span style=\"white-space: pre;\">\t</span>One of the most challenging aspects of the project was optimizing the tracking algorithm to work in real-time, without sacrificing accuracy. By fine-tuning the Deep Sort algorithm and adjusting frame rates, we were able to achieve both speed and precision.",
-        "results": "<span style=\"white-space: pre;\">\t</span>ML K.I.D.A. successfully detects and tracks mites with an accuracy rate of 90%, providing early warnings to farmers about potential infestations. The system has reduced manual inspection times by over 50%, allowing farmers to focus on more critical tasks and ensuring a higher crop yield.",
-        "feedback": "<span style=\"white-space: pre;\">\t</span>Farmers who tested ML K.I.D.A. have reported increased efficiency in pest management, with the system detecting mites faster than traditional methods. In one case study, the early detection allowed a farm to take preventative measures, saving an entire crop from mite infestation.",
-        "improvements": "<span style=\"white-space: pre;\">\t</span>Future iterations of ML K.I.D.A. will include support for detecting multiple types of pests, expanded crop coverage, and an enhanced mobile interface for real-time alerts on the go.",
-        "conclusion": "<span style=\"white-space: pre;\">\t</span>ML K.I.D.A. represents the future of precision agriculture, demonstrating how machine learning can streamline pest management and safeguard global food production.",
-        "categories": ["Artificial Intelligence", "Web Development", "Python", "Data Science"],
-        "skills": ["YOLOv8", "Deep Sort Algorithm", "Django", "Roboflow", "Machine Learning Model Integration"],
-        "image": "images/projects/MLKIDA/MLKIDA.jpg",
-        "link": "./projects.html"
-      },
-      
-      
-      {
-        "id": "AdventureMinds",
-        "title": "AdventureMinds",
-        "subtitle": "AdventureMinds: Collaborative Travel Planning and Social Platform",
-        "introduction": "<span style=\"white-space: pre;\">\t</span>AdventureMinds is a collaborative travel planning platform that allows users to create, edit, and share detailed travel itineraries while connecting with other travel enthusiasts. The platform fosters a community where travelers exchange destination tips and document shared experiences, making it easier for users to discover new destinations and plan trips together. AdventureMinds combines the convenience of itinerary management with the social aspect of shared travel.",
-        "background": "<span style=\"white-space: pre;\">\t</span>AdventureMinds was developed with the goal of simplifying the travel planning process by creating a platform where users can collaborate on itineraries and share travel experiences. The platform encourages interaction between travelers, allowing users to connect based on mutual interests and discover new destinations through community input. The system was built using Django and Python, leveraging the framework's flexibility for rapid development and scalability.",
-        "features": [
-          "<strong>Itinerary Creation and Sharing:</strong> Users can create detailed travel itineraries, edit them, and share them with others for collaborative planning.",
-          "<strong>Chat Feature:</strong> A built-in chat system allows users to communicate in real-time, discuss travel plans, and coordinate trips.",
-          "<strong>Destination Tips and Reviews:</strong> Users can exchange tips and leave reviews for specific destinations, enhancing trip planning with community insights.",
-          "<strong>User Profiles and Networking:</strong> The platform encourages social interaction, allowing users to connect with like-minded travelers and build a network of travel buddies."
-        ],
-        "tech_stack": "AdventureMinds was developed using the following technologies:<br><br><strong>1. Django</strong> for web development.<br><strong>2. Python</strong> for scripting and feature implementation.<br><strong>3. JavaScript</strong> for interactive front-end components.<br><strong>4. SQLite</strong> for database management during development, with plans for scalable databases for production.<br><strong>5. Django Channels</strong> for enabling real-time chat functionality.",
-        "development": "<strong>1. Chat System:</strong> The real-time chat system was developed using Django Channels, allowing users to communicate instantly while planning their trips together.<br><strong>2. Itinerary Management:</strong> A robust itinerary creation tool was developed that allows multiple users to collaborate on travel plans, edit details, and save changes in real time.<br><strong>3. Social Integration:</strong> User profiles and travel preferences were added, allowing users to network with others and find travel companions based on shared interests.",
-        "challenges": "Developing AdventureMinds involved several key challenges:<br><br><strong>1. Real-Time Communication:</strong> Implementing the chat system required real-time data processing, which was achieved using Django Channels for WebSocket communication.<br><strong>2. Collaborative Editing:</strong> Ensuring that multiple users could simultaneously edit and save itineraries without conflicts was a technical challenge that required careful database management.",
-        "results": "<span style=\"white-space: pre;\">\t</span>AdventureMinds successfully combined itinerary management with social networking, allowing users to collaborate on travel plans while connecting with other enthusiasts. The chat system has been particularly effective in fostering real-time communication between users during the planning phase.",
-        "feedback": "<span style=\"white-space: pre;\">\t</span>Users appreciated the ease of collaboration and the ability to share itineraries with others. The chat feature was particularly well-received, as it allowed for smooth coordination of group trips and provided a platform for exchanging tips and destination recommendations.",
-        "improvements": "Future improvements to AdventureMinds include:<br><br><strong>1. Advanced Search Filters:</strong> Implementing search filters to help users find itineraries and travel buddies based on specific criteria like destination, duration, or travel type.<br><strong>2. Mobile App Development:</strong> Expanding the platform to include a mobile application, making it easier for users to plan trips on-the-go.<br><strong>3. Enhanced Review System:</strong> Adding a more robust review and rating system for destinations, hotels, and activities.",
-        "conclusion": "<span style=\"white-space: pre;\">\t</span>AdventureMinds offers a unique blend of travel planning and social networking, providing a platform for travelers to create, edit, and share itineraries while connecting with others. With its collaborative features and real-time communication tools, the platform is set to transform the way people plan and experience travel.",      
-        "categories": ["Web Development", "Python"],
-        "skills": ["Python", "Django", "Web Development", "PyCharm", "GitHub"],
-        "image": "images/projects/AdventureMinds/AdventureMinds.jpg",
-        "link": "./projects.html"
-      },
-
-      
-      {
-        "id": "ReSecure",
-        "title": "ReSecure",
-        "subtitle": "Innovating Home Security with Old Smartphones",
-        "introduction": "<span style=\"white-space: pre;\">\t</span>In the age of rapidly advancing technology, old smartphones are often discarded or forgotten. However, ReSecure offers a novel approach by repurposing these devices into effective home surveillance cameras. By pairing an old smartphone with a companion app, ReSecure provides an affordable, accessible home security solution, negating the need for additional hardware.",
-        "background": "<span style=\"white-space: pre;\">\t</span>As traditional security solutions for homes can be costly and complex, there is an increasing demand for affordable alternatives. The idea for ReSecure was born from the desire to transform unused smartphones into functional security cameras, making home security more accessible while promoting sustainability.",
-        "features": [
-          "<strong>Flutter Cross-Platform Development:</strong> ReSecure uses Flutter for developing the mobile app, ensuring consistent user experience across both Android and iOS.",
-          "<strong>Firebase Real-Time Data Handling:</strong> The system integrates with Firebase for secure video streaming, notifications, and user management.",
-          "<strong>Motion Detection and Notifications:</strong> The system includes motion detection, providing real-time alerts and minimizing false alarms.",
-          "<strong>User-Friendly Interface:</strong> ReSecure is designed with usability in mind, making the setup and operation simple for even non-technical users.",
-          "<strong>Multi-User Access:</strong> Allows multiple users to manage and monitor the system, increasing its flexibility for households."
-        ],
-        "tech_stack": "<span style=\"white-space: pre;\">\t</span>ReSecure was developed using Flutter for mobile app development, Firebase for backend services, including real-time notifications and data handling, and Google Firebase for authentication. The project is built for both Android and iOS platforms, ensuring a seamless experience across devices.",
-        "development": "The project followed the Agile development methodology, breaking the process into several phases:<br><br><strong>1. Planning:</strong> Detailed analysis of requirements and tools.<br><strong>2. Design:</strong> Prototyping the app’s user interface and defining backend architecture.<br><strong>3. Development:</strong> Building and integrating motion detection, user management, and real-time notifications.<br><strong>4. Testing:</strong> Rigorous unit and system testing, followed by user feedback for refinements.<br><strong>5. Deployment:</strong> The apps were deployed on the Google Play Store and Apple App Store.",
-        "challenges": "The primary challenge was achieving a balance between real-time performance and accuracy in motion detection. Using Firebase for real-time notifications and video streaming, the team also had to ensure security and low-latency performance, especially in older devices.",
-        "results": "<span style=\"white-space: pre;\">\t</span>ReSecure has demonstrated its effectiveness by transforming unused smartphones into home security systems, reducing the need for costly hardware. The system provides real-time video streaming and motion detection alerts with an easy-to-use interface. User feedback shows a significant reduction in manual monitoring time, with early adopters reporting increased security without the high costs associated with traditional systems.",
-        "feedback": "<span style=\"white-space: pre;\">\t</span>Users have praised ReSecure’s ease of use and the practicality of utilizing old smartphones. In one case study, a user reported successfully setting up a system without any technical background, showcasing the accessibility of the solution.",
-        "improvements": "Planned improvements include:<br><br><strong>1. Web Portal and Cross-Platform Access:</strong> Enabling users to access the system via a web portal, expanding its accessibility.<br><strong>2. Advanced Motion Detection:</strong> Enhancing the customization of motion detection to reduce false positives and increase accuracy.<br><strong>3. Smart Home Integration:</strong> Future versions will integrate with other smart home devices to create a comprehensive home automation system.",
-        "conclusion": "<span style=\"white-space: pre;\">\t</span>ReSecure redefines home security by upcycling old smartphones and providing a cost-effective solution without compromising on functionality. With plans for further enhancements and a clear focus on user-friendliness, ReSecure is poised to revolutionize the home security market, combining sustainability with cutting-edge technology.",
-        "categories": ["Android Applications"],
-        "skills": ["Flutter", "Google Firebase", "Motion Detection", "Security Camera Integration", "Cross-Platform Development"],
-        "image": "images/projects/ReSecure/ReSecure.jpg",
-        "link": "./projects.html"
-      },
-      
-      
-      {
-        "id": "WiseBridge",
-        "title": "WiseBridge",
-        "subtitle": "WiseBridge: An Online Education Platform for Networking and Learning",
-        "introduction": "<span style=\"white-space: pre;\">\t</span>WiseBridge is an online education platform designed to connect Master of Applied Computing (MAC) students and alumni from the University of Windsor. The platform allows experts (senior students and alumni) to post educational content and monetize it, while offering students a reliable source of course-related materials and networking opportunities.",
-        "background": "<span style=\"white-space: pre;\">\t</span>Traditional education is increasingly being supplemented or replaced by online platforms. WiseBridge aims to provide students of the MAC program with focused educational content from verified experts, tailored to their specific academic needs. Additionally, it creates a networking platform for students and alumni, fostering collaboration and knowledge sharing.",
-        "features": [
-          "<strong>Content Upload and Monetization:</strong> Experts can upload course materials, including notes, videos, and audio files, and monetize their content.",
-          "<strong>Student Access:</strong> Students have access to verified educational resources, including course content uploaded by experts, and can download materials for offline use.",
-          "<strong>Networking Platform:</strong> WiseBridge facilitates collaboration through chat groups and offline event scheduling, allowing students and alumni to network effectively.",
-          "<strong>Content Moderation:</strong> All content is subject to review and approval by the platform admin, ensuring that only high-quality, relevant materials are made available to students.",
-          "<strong>User Roles:</strong> Three user types exist within the platform—Students, Experts, and Admins—each with distinct privileges and responsibilities."
-        ],
-        "tech_stack": "The development of WiseBridge uses the following technologies:<br><br><strong>1. Java</strong> for core programming.<br><strong>2. Android Studio</strong> for building the Android application.<br><strong>3. Firebase</strong> for cloud-based database and authentication services.<br><strong>4. GitHub</strong> for version control.<br><strong>5. Jira</strong> for project management.",
-        "development": "<strong>1. Provisional Project Planning:</strong> The project was divided into four sprints, each with specific tasks, such as setting up repositories, implementing user roles, designing and developing UI, and testing the platform.<br><strong>2. Sprint Reports:</strong> Regular sprints were conducted to monitor progress, with adjustments made for unforeseen challenges like team familiarity with the tech stack.<br><strong>3. Class Diagrams and Use Case Design:</strong> Initial designs for user interactions and class structures were refined as the project progressed, resulting in a final system architecture for managing users, content, and subscriptions.",
-        "challenges": "Several challenges were encountered during the development:<br><br><strong>1. Team Familiarity:</strong> The development team was relatively new to Android development, leading to delays as members learned the necessary tools and technologies.<br><strong>2. Time Constraints:</strong> Modifications in sprint planning were required to accommodate training sessions and project adjustments.<br><strong>3. Content Moderation:</strong> Scaling the content moderation process presented challenges as the application grew, potentially requiring more manpower to review and approve materials.",
-        "results": "<span style=\"white-space: pre;\">\t</span>WiseBridge successfully provided a platform for students and experts to engage in educational content sharing and networking. The app's review and approval system ensured that students received quality materials, while the monetization feature allowed experts to earn supplemental income. Despite early challenges, the project was completed within the set timeline.",
-        "feedback": "<span style=\"white-space: pre;\">\t</span>Students and experts praised WiseBridge for its targeted approach to networking and learning. The user-friendly interface and monetization feature were particularly appreciated by the experts. Some feedback suggested improving the scalability of the content moderation process as the platform grows.",
-        "improvements": "Future iterations of WiseBridge will focus on:<br><br><strong>1. Scalability:</strong> Improving the content moderation system to handle a larger number of users and content submissions.<br><strong>2. Enhanced Features:</strong> Introducing a seminar or event organization feature to allow experts to schedule meetings with students.<br><strong>3. Improved Networking:</strong> Expanding the networking capabilities to include broader collaboration tools beyond chat and event scheduling.",
-        "conclusion": "<span style=\"white-space: pre;\">\t</span>WiseBridge offers a niche-focused educational platform for MAC students and alumni, providing a unique combination of content sharing, networking, and monetization. By fostering collaboration and providing valuable resources, WiseBridge stands out as a tailored solution for the academic community at the University of Windsor.",      
-        "categories": ["Android Applications"],
-        "skills": ["Java", "Firebase", "Android Studio", "Scrum Methodology", "GitHub"],
-        "image": "images/projects/WiseBridge/WiseBridge.jpg",
-        "link": "./projects.html"
-      },
-      
-      
-      {
-        "id": "TradeManager",
-        "title": "Trade Manager",
-        "subtitle": "Trade Manager: Automating Multi-Account Trading",
-        "introduction": "<span style=\"white-space: pre;\">\t</span>The Trade Manager is a desktop application designed to streamline the process of managing multiple trading accounts across different brokers. This software allows users to execute the same trades in multiple accounts simultaneously, making it easier for traders to manage their portfolios. By automating trades based on pre-defined strategies, the application simplifies the trading process, reduces time, and minimizes manual errors.",
-        "background": "<span style=\"white-space: pre;\">\t</span>In the fast-paced world of stock trading, managing multiple accounts across different brokers can be time-consuming and prone to error. Trade Manager was developed to address this issue by providing a unified platform for executing trades. It also allows for automatic order execution based on trading strategies selected by the user, ensuring that trades are placed consistently and accurately.",
-        "features": [
-          "<strong>Multi-Account Trading:</strong> Execute trades in multiple broker accounts from a single platform.",
-          "<strong>Automated Strategies:</strong> Users can select pre-defined trading strategies that automatically execute orders.",
-          "<strong>Trade History:</strong> The application provides a consolidated view of trading history across all accounts, with options to filter data.",
-          "<strong>Open/Close Positions:</strong> View open and close positions across multiple accounts in one place, simplifying portfolio management.",
-          "<strong>Net P/L Calculation:</strong> The system calculates net profit/loss and commissions for all accounts on a weekly basis."
-        ],
-        "tech_stack": "The Trade Manager project was built using the following technologies:<br><br><strong>1. Python</strong> for front-end and back-end development.<br><strong>2. PyCharm</strong> as the development environment.<br><strong>3. MongoDB</strong> for database management.<br><strong>4. WebSockets</strong> for real-time communication with brokers.<br><strong>5. InstallForge</strong> for creating the software installer.",
-        "development": "<strong>1. System Architecture:</strong> The software connects multiple trading accounts to a single interface, providing a consolidated view of trade history and open positions.<br><strong>2. Automation:</strong> The project implements algorithmic trading, allowing the system to place trades automatically according to selected strategies.<br><strong>3. Testing:</strong> Rigorous testing was conducted to ensure accuracy in order execution and data handling across multiple accounts.",
-        "challenges": "Some challenges encountered during the development process include:<br><br><strong>1. Multi-Account Management:</strong> Developing a system that manages multiple accounts while ensuring accurate synchronization was complex.<br><strong>2. Real-Time Data Processing:</strong> Handling real-time data from brokers required optimizing performance to ensure timely execution of trades.<br><strong>3. Security:</strong> Ensuring secure handling of sensitive user credentials and trading data was a top priority.",
-        "results": "<span style=\"white-space: pre;\">\t</span>The Trade Manager successfully achieved its goal of simplifying multi-account trading. It allows users to automate trades, manage open and close positions, and view trading history for all accounts in one place. The automated strategies have proven effective in saving time and reducing manual errors.",
-        "feedback": "<span style=\"white-space: pre;\">\t</span>User feedback has been positive, with traders appreciating the convenience of managing multiple accounts from one platform. The automation features were particularly well-received, as they allowed users to focus on strategy rather than execution.",
-        "improvements": "Future improvements include:<br><br><strong>1. Adding</strong> support for more brokers to expand the reach of the platform.<br><strong>2. Enhancing security</strong> features, such as two-factor authentication, to improve data safety.<br><strong>3. Further optimizing the performance</strong> of real-time data processing to ensure even faster execution times.",
-        "conclusion": "<span style=\"white-space: pre;\">\t</span>The Trade Manager provides a robust solution for traders managing multiple accounts, combining automation, efficiency, and ease of use into one platform. As trading continues to evolve, the system offers traders an edge by simplifying and automating their trading processes.",      
-        "categories": ["Python", "Algo Trading"],
-        "skills": ["Python Programming", "MongoDB", "Data Analysis", "PyQt5", "Multithreading"],
-        "image": "images/projects/TradeManager/TradeManager.jpg",
-        "link": "./projects.html"
-      },
-      
-      
-      {
-        "id": "TradeMaster",
-        "title": "Trade Master",
-        "subtitle": "Trade Master: Back-End Trade Execution System for AlgoSuccess",
-        "introduction": "<span style=\"white-space: pre;\">\t</span>Trade Master is a back-end trade execution system developed for AlgoSuccess, a leading platform for algorithmic trading. The system allows traders to execute orders automatically through brokerage APIs, ensuring real-time trade placement. Designed for high-frequency traders, Trade Master integrates seamlessly with AlgoSuccess’s algorithmic strategies, providing a reliable and efficient solution for automated trading.",
-        "background": "<span style=\"white-space: pre;\">\t</span>With the increasing demand for algorithmic trading solutions, Trade Master was created to enable seamless trade execution within the AlgoSuccess platform. The system was designed to handle high volumes of orders while ensuring low-latency communication with brokers. This back-end infrastructure supports traders by automating their strategies, allowing them to focus on refining algorithms without worrying about manual execution.",
-        "features": [
-          "<strong>Real-Time Trade Execution:</strong> The system executes trades in real-time, ensuring timely order placement and updates.",
-          "<strong>Brokerage API Integration:</strong> Trade Master is integrated with multiple brokerage APIs, allowing traders to manage accounts and place trades from a single platform.",
-          "<strong>High-Volume Order Handling:</strong> Built for high-frequency trading, Trade Master can handle large volumes of trades without compromising performance.",
-          "<strong>Error Handling & Risk Management:</strong> The system includes mechanisms to handle errors and ensure risk management, preventing excessive losses due to market fluctuations."
-        ],
-        "tech_stack": "The development of Trade Master uses the following technologies:<br><br><strong>1. Python</strong> for back-end development.<br><strong>2. WebSocket</strong> for real-time communication with broker APIs.<br><strong>3. MongoDB</strong> for storing trade histories and logs.<br><strong>4. AWS</strong> services for cloud deployment and scalability.",
-        "development": "<strong>1. API Integration:</strong> The system integrates with brokerage APIs using WebSocket connections to ensure real-time trade execution and updates.<br><strong>2. Error Handling:</strong> Various error-handling mechanisms were implemented to manage failed orders or broker disconnections, ensuring that traders faced minimal disruptions.<br><strong>3. Trade Validation:</strong> Each trade is validated against predefined conditions to ensure compliance with risk management rules.",
-        "challenges": "Developing Trade Master involved several challenges:<br><br><strong>1. Low-Latency Execution:</strong> Ensuring that trades were executed in real-time required optimizing the system for low-latency communication with brokers.<br><strong>2. High-Volume Handling:</strong> Managing a large number of trades simultaneously without delays or performance bottlenecks was a key challenge.<br><strong>3. API Reliability:</strong> The system had to handle intermittent broker API issues and ensure that trades were executed reliably even during connection disruptions.",
-        "results": "<span style=\"white-space: pre;\">\t</span>Trade Master successfully executed high-volume trades with low latency, providing users of AlgoSuccess with a seamless trading experience. It handled real-time communication with multiple brokers while minimizing downtime and errors.",
-        "feedback": "<span style=\"white-space: pre;\">\t</span>Users of the AlgoSuccess platform praised the speed and reliability of Trade Master. The automated execution of trades allowed traders to focus on strategy rather than manual trade placement, enhancing overall trading performance.",
-        "improvements": "Future improvements for Trade Master include:<br><br><strong>1. Expanding to More Brokers:</strong> Adding support for more brokerage APIs to increase the flexibility of the system.<br><strong>2. Enhanced Risk Management:</strong> Improving the risk management features to provide more customizable risk profiles for traders.<br><strong>3. Optimizing Latency:</strong> Further reducing trade execution time to ensure even faster order placement.",
-        "conclusion": "<span style=\"white-space: pre;\">\t</span>Trade Master has proven to be a reliable back-end trade execution system, enabling AlgoSuccess users to trade automatically and efficiently. By integrating with multiple brokers and handling high-frequency trades, it provides traders with the tools they need to succeed in the fast-paced world of algorithmic trading.",      
-        "categories": ["Python", "Algo Trading"],
-        "skills": ["Algo Trading", "WebSocket", "Asynchronous Programming", "Multithreading", "REST API"],
-        "image": "images/projects/TradeMaster/TradeMaster.jpg",
-        "link": "./projects.html"
+  "projects": [
+    {
+      "id": "YouTubeDataAnalysis",
+      "title": "YouTube Data Analysis",
+      "subtitle": "Data Science Insights on YouTube Trends by Country",
+      "introduction": "<strong>YouTube Data Analysis – Country-Wise Content Trends</strong> leverages <strong>YouTube API</strong> data to analyze regional content preferences, providing valuable insights for <strong>marketers</strong>, <strong>creators</strong>, and <strong>researchers</strong>. Built with scalable data handling on <strong>AWS</strong>, this project uncovers what resonates with audiences in different countries.",
+      "background": "Optimizing content strategies requires <strong>understanding regional YouTube trends</strong>, yet existing tools often lack country-specific insights. This project fills that gap by retrieving and analyzing <strong>YouTube data</strong> by country, enabling more targeted strategies.",
+      "features": [
+        "<strong>API Integration:</strong> Fetches country-specific trending data directly from <strong>YouTube</strong>.",
+        "<strong>AWS-Based Storage and Processing:</strong> <strong>AWS S3</strong>, <strong>Glue</strong>, <strong>Lambda</strong>, and <strong>Athena</strong> provide scalable data handling and processing.",
+        "<strong>Data Visualization:</strong> Visual trends displayed via <strong>AWS QuickSight</strong> reveal user preferences across regions.",
+        "<strong>Automated Data Pipeline:</strong> Daily data imports ensure real-time insights.",
+        "<strong>Data Security:</strong> Secure handling with <strong>AWS</strong> infrastructure, in line with <strong>YouTube API</strong> guidelines."
+      ],
+      "tech_stack": "Built using <strong>Python</strong> for data handling, <strong>AWS</strong> for scalable storage and processing (<strong>S3</strong>, <strong>Glue</strong>, <strong>Athena</strong>, <strong>QuickSight</strong>), and the <strong>YouTube API</strong> for data access.",
+      "development": "<strong>Data Collection:</strong> Real-time trending data stored on <strong>AWS S3</strong>.<br><strong>Data Transformation:</strong> <strong>AWS Glue</strong> and <strong>Lambda</strong> used for data cleaning and conversion to Parquet format.<br><strong>Data Visualization:</strong> Country-specific trends visualized through <strong>AWS QuickSight</strong> charts.<br><strong>Data Security:</strong> <strong>AWS IAM</strong> ensures controlled and secure access.",
+      "challenges": "Key challenges included handling <strong>Data Volume</strong> in country-specific partitioning, ensuring <strong>Data Quality</strong> during transformations, and managing <strong>Historical Data</strong> limitations of the <strong>YouTube API</strong>.",
+      "results": "This project enables scalable analysis of <strong>YouTube trends</strong> across countries, providing valuable insights into regional preferences. Real-time data helps <strong>marketers</strong> and <strong>content creators</strong> adjust their strategies to stay ahead of emerging trends.",
+      "feedback": "Users appreciated the tool's simplicity and valuable insights, which allowed <strong>marketers</strong> to refine targeting strategies and <strong>content creators</strong> to boost engagement.",
+      "improvements": "<strong>Enhanced Analytics:</strong> Plan to develop a <strong>web interface</strong> with advanced analytics options.<br><strong>Historical Data:</strong> Further explore options for including historical trend data.<br><strong>Improved Interface:</strong> Increase interactivity for in-depth data exploration.",
+      "conclusion": "This project uses <strong>data science</strong> and <strong>AWS</strong> to reveal <strong>YouTube content trends</strong> globally. The secure, scalable system provides actionable insights, empowering <strong>marketers</strong> and <strong>creators</strong> to make <strong>data-informed decisions</strong>.",
+      "categories": ["Data Science", "AWS"],
+      "skills": ["Data Analysis", "YouTube API", "Data Processing Pipeline", "AWS", "Real-time Data Handling"],
+      "image": "images/projects/YouTubeDataAnalysis/YouTubeDataAnalysis.jpg",
+      "media": {
+        "type": "ppt",
+        "path": "https://docs.google.com/presentation/d/1jErowRLeUgOvMJxlHR8TBK16WoWukWIy/edit?usp=sharing&ouid=104870617554992213042&rtpof=true&sd=true"
       }
+    },
 
+    {
+      "id": "PlantDiseaseDetection",
+      "title": "Plant Disease Detection",
+      "subtitle": "Data-Driven Plant Disease Detection for Backyard Farmers",
+      "introduction": "<strong>Plant Disease Detection for Backyard Farmers</strong> addresses a common challenge: accurate plant disease diagnosis, especially for amateur gardeners. This <strong>Android app</strong> leverages <strong>AI</strong> to provide instant, reliable disease detection, helping users maintain healthier crops.",
+      "background": "With the rise of backyard farming, novice gardeners often struggle with plant health management due to limited diagnostic tools. This project employs <strong>AI-driven image analysis</strong> to help users detect plant diseases early, enabling effective and timely intervention.",
+      "features": [
+        "<strong>ResNet-9 Model:</strong> Achieves high accuracy (99.2%) in identifying plant diseases.",
+        "<strong>Image-Based Detection:</strong> Analyzes plant images instantly to identify diseases.",
+        "<strong>User-Friendly Interface:</strong> Designed for ease of use, even for non-technical users.",
+        "<strong>Sustainable Farming:</strong> Helps gardeners take proactive steps for crop health."
+      ],
+      "tech_stack": "Built with the <strong>ResNet-9</strong> model for image classification, trained using <strong>PyTorch</strong> and the <strong>PlantVillage dataset</strong>, integrated into an <strong>Android app</strong> for real-time disease detection.",
+      "development": "<strong>Data Collection:</strong> Utilized 87,000 labeled leaf images for model training and validation.<br><strong>Model Selection:</strong> <strong>ResNet-9</strong> chosen for its accuracy and reliability, enhanced with data augmentation.<br><strong>Training Optimization:</strong> Techniques like batch normalization and gradient descent were applied.<br><strong>Android Integration:</strong> Deployed in an app to provide disease detection directly on user devices.",
+      "challenges": "<strong>Model Optimization:</strong> Balancing speed and accuracy for real-time use.<br><strong>Overfitting Prevention:</strong> Used learning rate scheduling to improve generalization.<br><strong>Deployment:</strong> Leveraged a <strong>Python API</strong> and local <strong>GPU</strong> for efficient model processing.",
+      "results": "The app delivers a 99.2% accurate diagnosis of plant diseases, enabling backyard farmers to address crop health issues proactively.",
+      "feedback": "Users appreciated the app's accuracy and ease of use, noting its value for early disease intervention and overall crop health.",
+      "improvements": "<strong>Dataset Expansion:</strong> Adding more plant species and diseases.<br><strong>Enhanced App Features:</strong> Allow image capture within the app for real-time analysis.<br><strong>Personalized Disease Management Tips:</strong> Tailored advice based on detected diseases.",
+      "conclusion": "This project showcases <strong>AI’s</strong> potential in supporting <strong>sustainable agriculture</strong>, providing a <strong>data science-driven tool</strong> to enhance plant health management. Planned improvements aim to broaden disease coverage and further empower users with actionable insights.",
+      "categories": ["Data Science", "Artificial Intelligence", "Python"],
+      "skills": ["Image Processing", "Deep Learning", "ResNet-9", "PyTorch", "Machine Learning Deployment"],
+      "image": "images/projects/PlantDiseaseDetection/PlantDiseaseDetection.jpg",
+      "github": "https://github.com/dixituwindsor/Plant_Disease_Detection",
+      "media": {
+        "type": "png",
+        "path": "./resources/PlantDiseaseDetection.png"
+      }
+    },
 
-    ]
-  }
-  
+    {
+      "id": "DiabetesDiseasePrediction",
+      "title": "Diabetes Disease Prediction",
+      "subtitle": "Data Science Approach to Diabetes Prediction Using Machine Learning on Big Healthcare Data",
+      "introduction": "This study focuses on <strong>data science</strong> techniques applied to <strong>diabetes prediction</strong> using healthcare data. It analyzes and evaluates various <strong>machine learning models</strong>, providing insights into each model's predictive capabilities and limitations. The project aims to enhance diabetes prediction using a data-driven approach that could support healthcare professionals in early detection efforts.",
+      "background": "<strong>Diabetes</strong> is a global health concern, impacting millions worldwide. This project applies <strong>data science</strong> principles to explore healthcare data and develop predictive models for diabetes, providing early diagnostic support through <strong>machine learning</strong>.",
+      "features": [
+        "<strong>Data-Driven Model Comparison:</strong> Detailed analysis of models including <strong>Naive Bayes</strong>, <strong>SVM</strong>, and <strong>Random Forest</strong> for optimal predictive performance.",
+        "<strong>Big Data Analysis:</strong> Focus on handling extensive healthcare datasets for accurate prediction using machine learning techniques.",
+        "<strong>Comprehensive Model Evaluation:</strong> <strong>WEKA</strong> tool was used to build and compare models, with <strong>Support Vector Machine</strong> performing best for diabetes classification.",
+        "<strong>Predictive Insights:</strong> Provides data-driven insights by evaluating multiple machine learning models, identifying potential patterns and areas for improvement."
+      ],
+      "tech_stack": "Developed using <strong>WEKA</strong> and <strong>Python</strong>, focusing on <strong>machine learning</strong> and data preprocessing. Models tested include <strong>Naive Bayes</strong>, <strong>SVM</strong>, <strong>Random Forest</strong>, <strong>CNN</strong>, <strong>LSTM</strong>, and more to cover a range of predictive capabilities.",
+      "development": "<strong>Model Selection:</strong> Selection of both traditional and advanced models, from <strong>Logistic Regression</strong> to <strong>CNN</strong> and <strong>LSTM</strong>.<br><strong>Performance Metrics:</strong> Evaluated models based on <strong>accuracy</strong>, <strong>precision</strong>, <strong>recall</strong>, and <strong>F-Measure</strong>.<br><strong>Feature Engineering:</strong> Ensured data quality and effective handling of large healthcare datasets to support accurate model training and testing.",
+      "challenges": "Key challenges included:<br><strong>Big Data Handling:</strong> Efficient processing of healthcare datasets.<br><strong>Model Performance:</strong> Optimizing models such as <strong>Naive Bayes</strong> and <strong>SVM</strong> for accuracy.<br><strong>Data Privacy:</strong> Ensuring data security in line with healthcare data standards.",
+      "results": "Final outcomes highlighted:<br>- <strong>Naive Bayes</strong> achieved the highest accuracy (76.62%) and F-Measure.<br>- <strong>SVM</strong> had the best precision and lowest false positive rate.<br>- <strong>Simple CART</strong> demonstrated the highest recall, providing diverse insights into model performance.",
+      "feedback": "The <strong>data science</strong> approach to <strong>diabetes prediction</strong> received positive feedback, particularly for the comparative model analysis and insights into predictive accuracy. There is potential for further accuracy improvement by exploring additional techniques.",
+      "improvements": "Future enhancements include:<br><strong>Advanced Privacy Solutions:</strong> Ensuring data security for large-scale healthcare datasets.<br><strong>Expanded Model Exploration:</strong> Applying advanced machine learning and deep learning techniques.<br><strong>Data Quality Augmentation:</strong> Enhancing dataset size and quality to support more robust model training.",
+      "conclusion": "This <strong>data science project</strong> underscores the importance of model comparison for <strong>diabetes prediction</strong>, leveraging healthcare data to support early diagnosis efforts. Continued exploration of advanced techniques can enhance model accuracy and address challenges in <strong>data privacy</strong>.",
+      "categories": ["Data Science", "Artificial Intelligence", "Python"],
+      "skills": ["Machine Learning Algorithms", "Data Preprocessing", "Big Data Analysis", "Naive Bayes Classification", "Support Vector Machines"],
+      "image": "images/projects/DiabetesDiseasePrediction/DiabetesDiseasePrediction.jpg",
+      "github": "https://github.com/dixituwindsor/Diabetes_Disease_Prediction"
+    },
+
+    {
+      "id": "PlacementPackagePrediction",
+      "title": "Placement Package Prediction",
+      "subtitle": "Data Science-Driven Campus Placement Package Prediction",
+      "introduction": "The <strong>Placement Package Prediction System</strong> leverages <strong>machine learning</strong> to predict campus placement packages based on student data. By analyzing <strong>academic performance</strong>, <strong>project work</strong>, and <strong>extracurriculars</strong>, this model provides students with an estimated package figure, accessible via an <strong>Android application</strong>.",
+      "background": "<strong>Placement outcomes</strong> are critical for students and colleges alike. This project applies <strong>data science</strong> to analyze historical placement data, generating predictive insights into potential package offers. Using factors like <strong>CGPA</strong>, projects, and skills, the model provides students with personalized placement predictions, aiding their preparation.",
+      "features": [
+        "<strong>Android Integration:</strong> Students can input their details and receive package predictions directly on their phones.",
+        "<strong>Data-Driven Model:</strong> Trained on historical placement data, using supervised learning to predict package outcomes.",
+        "<strong>Predictive Insights:</strong> Offers package predictions based on academic and extracurricular data.",
+        "<strong>User-Friendly Interface:</strong> Accessible interface for students to easily input data and obtain predictions."
+      ],
+      "tech_stack": "Technologies used include:<br><br><strong>Python</strong> for model development, <strong>Jupyter Notebook</strong> for algorithm testing, <strong>Android Studio</strong> for the mobile interface, and <strong>NumPy</strong>, <strong>Pandas</strong>, <strong>Scikit-learn</strong> for data processing and model building.",
+      "development": "<strong>Data Collection:</strong> Two years of placement data (100+ student records) were collected.<br><strong>Data Preprocessing:</strong> Cleaned and prepared data, handling missing values, and feature selection based on relevance to placement outcomes.<br><strong>Model Training:</strong> Split data into training (80%) and test sets (20%) and used feature scaling.<br><strong>Algorithm Selection:</strong> Tested models like <strong>Random Forest</strong> and <strong>Ensemble Learning</strong>; <strong>Random Forest</strong> delivered the most accurate predictions.",
+      "challenges": "<strong>Data Quality:</strong> Ensuring clean and complete data for accurate predictions.<br><strong>Model Accuracy:</strong> Fine-tuning algorithms to improve reliability.<br><strong>Integration:</strong> Ensuring smooth communication between the app’s front-end and machine learning model.",
+      "results": "The system provides students with estimated placement packages, achieving satisfactory accuracy with <strong>Random Forest</strong>. This insight aids students in understanding and planning for their placement outcomes.",
+      "feedback": "Students found the <strong>Android app</strong> easy to use and appreciated the insights into their expected placement packages, enabling them to prepare effectively for campus placements.",
+      "improvements": "<strong>Improving Data Accuracy:</strong> Include more factors like <strong>internships</strong> and <strong>soft skills</strong> to refine predictions.<br><strong>Dataset Expansion:</strong> Adding more years of data will enhance model accuracy.<br><strong>Real-Time Updates:</strong> Allow students to update profiles for instant, refreshed predictions.",
+      "conclusion": "This <strong>Placement Package Prediction System</strong> showcases <strong>data science</strong> in campus placements, providing personalized package estimates based on historical data. Accessible via a mobile app, the system offers students actionable insights and supports informed preparation for placement season.",
+      "categories": ["Data Science", "Machine Learning", "Python", "Android Development"],
+      "skills": ["Random Forest", "Data Preprocessing", "NumPy", "Pandas", "Scikit-learn"],
+      "image": "images/projects/PlacementPackagePrediction/PlacementPackagePrediction.jpg",
+      "github": "https://github.com/dixituwindsor/Placement_Package_Prediction",
+      "media": {
+        "type": "ppt",
+        "path": "https://docs.google.com/presentation/d/1Kv-vCoUgFFg30vWAPanc9pNgc490Enqj/edit?usp=sharing&ouid=104870617554992213042&rtpof=true&sd=true"
+      }
+    },
+
+    {
+      "id": "MLKIDA",
+      "title": "ML K.I.D.A.",
+      "subtitle": "Data Science-Powered Mite Detection for Agriculture",
+      "introduction": "<strong>ML K.I.D.A.</strong> applies <strong>machine learning</strong> to tackle the challenges of pest detection in agriculture, automating mite identification to reduce crop damage. By combining advanced algorithms with real-time alerts, this system provides farmers with efficient, <strong>data-driven pest management</strong>.",
+      "background": "Pest control is essential for <strong>agricultural productivity</strong>, yet traditional methods rely on manual inspection, which can be time-intensive and error-prone. <strong>ML K.I.D.A.</strong> offers a <strong>data science solution</strong>, utilizing high-accuracy machine learning models to detect and track mites, minimizing crop loss through timely interventions.",
+      "features": [
+        "<strong>YOLOv8 Object Detection:</strong> Uses a high-accuracy deep learning model to identify mites in real-time.",
+        "<strong>Deep Sort Tracking:</strong> Tracks mite movement across frames, helping farmers monitor infestations.",
+        "<strong>Django Web Interface:</strong> Allows access via a web-based platform, making it usable from any device.",
+        "<strong>Data Annotation:</strong> Annotated images via <strong>Roboflow</strong> ensure the model's accuracy in varied environments.",
+        "<strong>Real-Time Notifications:</strong> Alerts farmers immediately when mites are detected, enabling prompt action."
+      ],
+      "tech_stack": "Developed with <strong>Python</strong> for machine learning, <strong>Django</strong> for the web interface, <strong>YOLOv8</strong> for object detection, and <strong>Deep Sort</strong> for tracking. Data annotation was managed through <strong>Roboflow</strong> for high-quality training.",
+      "development": "<strong>Data Gathering:</strong> Extensive dataset collection of mite images across crop types.<br><strong>Model Training:</strong> <strong>YOLOv8</strong> trained with annotated images to detect mites under varied conditions.<br><strong>Optimization:</strong> Iteratively fine-tuned <strong>Deep Sort</strong> for real-time tracking without sacrificing detection accuracy.",
+      "challenges": "<strong>Real-Time Tracking:</strong> Achieving both speed and accuracy for real-time use required fine-tuning the <strong>Deep Sort</strong> algorithm and frame rate adjustments.",
+      "results": "<strong>ML K.I.D.A.</strong> accurately detects mites with 90% precision, significantly reducing manual inspection times and empowering farmers to respond quickly to infestations.",
+      "feedback": "Farmers reported enhanced efficiency in pest management. In one case, early detection prevented an infestation, saving an entire crop, highlighting <strong>ML K.I.D.A.</strong>'s value for proactive pest control.",
+      "improvements": "<strong>Multi-Pest Detection:</strong> Future updates will include more pest types.<br><strong>Expanded Coverage:</strong> Increase support for a broader range of crops.<br><strong>Mobile Interface:</strong> Enhanced mobile features for real-time, on-the-go alerts.",
+      "conclusion": "<strong>ML K.I.D.A.</strong> exemplifies the power of <strong>data science</strong> in precision agriculture, providing farmers with an intelligent, automated solution for pest management and supporting sustainable food production.",
+      "categories": ["Data Science", "Artificial Intelligence", "Python", "Web Development"],
+      "skills": ["YOLOv8", "Deep Sort", "Django", "Roboflow", "Machine Learning Model Integration"],
+      "image": "images/projects/MLKIDA/MLKIDA.jpg",
+      "github": "https://github.com/dixituwindsor/MLKIDA",
+      "media": {
+        "type": "png",
+        "path": "./resources/MLKIDA.png"
+      }
+    },
+
+    {
+      "id": "AdventureMinds",
+      "title": "AdventureMinds",
+      "subtitle": "Collaborative Travel Planning and Social Platform",
+      "introduction": "<strong>AdventureMinds</strong> is a travel planning platform that enables users to create, edit, and share itineraries while connecting with other travelers. It combines itinerary management with social networking, making it easy to discover destinations and plan trips collaboratively.",
+      "background": "<strong>AdventureMinds</strong> simplifies the travel planning process by allowing users to collaborate on itineraries, share tips, and connect with like-minded travelers. Developed with <strong>Django</strong> and <strong>Python</strong>, the platform leverages these tools to provide a flexible and scalable user experience.",
+      "features": [
+        "<strong>Itinerary Creation and Sharing:</strong> Users can build and edit travel itineraries with others in real-time.",
+        "<strong>Real-Time Chat:</strong> A chat feature allows users to coordinate and discuss travel plans instantly.",
+        "<strong>Destination Reviews:</strong> Community insights via tips and reviews enhance the planning experience.",
+        "<strong>Networking Profiles:</strong> Users can connect with other travelers based on interests and destinations."
+      ],
+      "tech_stack": "Developed using <strong>Django</strong> and <strong>Python</strong> for backend, <strong>JavaScript</strong> for interactivity, <strong>SQLite</strong> for development database, and <strong>Django Channels</strong> for real-time chat.",
+      "development": "<strong>Chat System:</strong> Built using <strong>Django Channels</strong> for real-time communication.<br><strong>Itinerary Management:</strong> A collaborative editing tool allows users to create and modify travel plans in real time.<br><strong>Social Integration:</strong> Profiles and preferences let users connect with others and find travel companions.",
+      "challenges": "<strong>Real-Time Communication:</strong> Implementing the chat required efficient WebSocket data handling.<br><strong>Collaborative Editing:</strong> Ensuring multiple users can edit and save itineraries without conflicts.",
+      "results": "<strong>AdventureMinds</strong> successfully integrates itinerary planning with social networking. The chat system is especially effective for real-time collaboration during trip planning.",
+      "feedback": "Users found collaboration easy and praised the chat feature for seamless group coordination and travel recommendations.",
+      "improvements": "<strong>Advanced Search:</strong> Filters for destinations, duration, and travel type.<br><strong>Mobile App:</strong> Plans for mobile development for on-the-go planning.<br><strong>Enhanced Reviews:</strong> Adding a more robust review and rating system.",
+      "conclusion": "<strong>AdventureMinds</strong> revolutionizes travel planning with collaborative features and real-time communication, offering a dynamic platform for connecting and planning together.",
+      "categories": ["Web Development", "Python"],
+      "skills": ["Python", "Django", "Web Development", "JavaScript", "GitHub"],
+      "image": "images/projects/AdventureMinds/AdventureMinds.jpg",
+      "github": "https://github.com/dixituwindsor/AdventureMinds",
+      "media": {
+        "type": "png",
+        "path": "./resources/AdventureMinds.png"
+      }
+    },
+
+    {
+      "id": "ReSecure",
+      "title": "ReSecure",
+      "subtitle": "Transforming Old Smartphones into Home Security Systems",
+      "introduction": "<strong>ReSecure</strong> repurposes old smartphones into functional home security cameras. With a simple setup through a companion app, <strong>ReSecure</strong> offers an affordable and accessible home security solution, eliminating the need for new hardware.",
+      "background": "Traditional home security solutions can be costly, so <strong>ReSecure</strong> was developed to provide an affordable alternative by transforming unused smartphones into security cameras. This project promotes both <strong>sustainability</strong> and <strong>accessibility</strong> in home surveillance.",
+      "features": [
+        "<strong>Cross-Platform Development:</strong> Built using <strong>Flutter</strong>, providing a consistent experience on Android and iOS.",
+        "<strong>Firebase Real-Time Data:</strong> Integrates with <strong>Firebase</strong> for secure video streaming, notifications, and user management.",
+        "<strong>Motion Detection Alerts:</strong> Real-time motion detection with instant notifications to users.",
+        "<strong>User-Friendly Interface:</strong> Simple setup and operation make <strong>ReSecure</strong> accessible to all users.",
+        "<strong>Multi-User Access:</strong> Allows multiple users to monitor and manage the system, enhancing flexibility."
+      ],
+      "tech_stack": "Developed with <strong>Flutter</strong> for mobile compatibility, <strong>Firebase</strong> for real-time notifications and video streaming, and <strong>Google Firebase</strong> for secure user authentication.",
+      "development": "<strong>Agile Methodology:</strong> Planned, designed, developed, tested, and deployed iteratively, with continuous feedback from early adopters.<br><strong>Real-Time Features:</strong> Integrated motion detection, real-time alerts, and user management.",
+      "challenges": "<strong>Performance Optimization:</strong> Balancing real-time accuracy with low latency, especially on older devices.",
+      "results": "<strong>ReSecure</strong> effectively transforms old smartphones into home security cameras, offering real-time streaming and alerts. Early adopters report reduced monitoring time and increased security, all with minimal setup costs.",
+      "feedback": "Users praise <strong>ReSecure</strong>’s accessibility and ease of setup, with even non-technical users able to install the system quickly and effectively.",
+      "improvements": "<strong>Web Portal Access:</strong> Planned web portal access for increased flexibility.<br><strong>Enhanced Motion Detection:</strong> Further customization to reduce false positives.<br><strong>Smart Home Integration:</strong> Future updates will allow integration with other smart home devices.",
+      "conclusion": "<strong>ReSecure</strong> redefines home security by turning old smartphones into effective security systems. With its user-friendly design and focus on sustainability, <strong>ReSecure</strong> offers a practical, low-cost solution for modern home security needs.",
+      "categories": ["Android Applications"],
+      "skills": ["Flutter", "Firebase", "Motion Detection", "Security Camera Integration", "Cross-Platform Development"],
+      "image": "images/projects/ReSecure/ReSecure.jpg",
+      "github": "https://github.com/dixituwindsor/resecure",
+      "media": {
+        "type": "ppt",
+        "path": "https://docs.google.com/presentation/d/13W4d7LXA4i-n67fZ8CwLnTTLYKVn64gH/edit?usp=sharing&ouid=104870617554992213042&rtpof=true&sd=true"
+      }
+    },
+
+    {
+      "id": "WiseBridge",
+      "title": "WiseBridge",
+      "subtitle": "Online Education and Networking for MAC Students",
+      "introduction": "<strong>WiseBridge</strong> is an educational platform connecting <strong>MAC students</strong> and <strong>alumni</strong> from the <strong>University of Windsor</strong>. It allows experts to share and monetize course-related content, while providing students with reliable resources and networking opportunities.",
+      "background": "<strong>WiseBridge</strong> was created to bridge the gap between traditional education and modern online learning. Designed specifically for <strong>MAC students</strong>, the platform offers expert-verified resources and fosters networking within the academic community.",
+      "features": [
+        "<strong>Content Upload and Monetization:</strong> Experts can share materials like notes and videos, with options to monetize.",
+        "<strong>Student Access:</strong> Students access verified resources, with offline download options for convenience.",
+        "<strong>Networking:</strong> Chat groups and event scheduling facilitate networking and collaboration.",
+        "<strong>Content Moderation:</strong> Content is reviewed by admins to maintain quality.",
+        "<strong>User Roles:</strong> Distinct roles for <strong>Students</strong>, <strong>Experts</strong>, and <strong>Admins</strong> ensure organized access and functionality."
+      ],
+      "tech_stack": "Developed using <strong>Java</strong> for core programming, <strong>Android Studio</strong> for the app, <strong>Firebase</strong> for database and authentication, <strong>GitHub</strong> for version control, and <strong>Jira</strong> for project management.",
+      "development": "<strong>Project Planning:</strong> Organized into four sprints, covering setup, UI design, development, and testing.<br><strong>Sprint Reports:</strong> Regular progress assessments with adjustments for team learning needs.<br><strong>System Design:</strong> User roles, content management, and subscription models shaped through class diagrams and use cases.",
+      "challenges": "<strong>Team Familiarity:</strong> The team’s learning curve with Android development required extra time.<br><strong>Time Management:</strong> Adjustments to sprints for training and unexpected needs.<br><strong>Scaling Content Moderation:</strong> Managing content review became challenging as the platform expanded.",
+      "results": "<strong>WiseBridge</strong> successfully provides a platform for sharing academic content and building networks. Its review system ensures high-quality resources, and the monetization feature offers a benefit for expert users.",
+      "feedback": "Students and experts appreciate <strong>WiseBridge</strong>’s focus on <strong>MAC program</strong> needs. The interface and monetization option were particularly valued by experts, with suggestions for scalable content moderation as the platform grows.",
+      "improvements": "<strong>Scalability:</strong> Improving moderation for a larger user base.<br><strong>New Features:</strong> Adding seminar and event organization tools.<br><strong>Enhanced Networking:</strong> Expanding collaboration options beyond chat and event scheduling.",
+      "conclusion": "<strong>WiseBridge</strong> uniquely supports the <strong>University of Windsor</strong>’s <strong>MAC community</strong>, offering a combination of educational resources, networking, and monetization. It’s a valuable tool for fostering academic collaboration and support.",
+      "categories": ["Android Applications"],
+      "skills": ["Java", "Firebase", "Android Studio", "Scrum Methodology", "GitHub"],
+      "image": "images/projects/WiseBridge/WiseBridge.jpg",
+      "github": "https://github.com/dixituwindsor/WiseBridge"
+    },
+
+    {
+      "id": "TradeManager",
+      "title": "Trade Manager",
+      "subtitle": "Automating Multi-Account Trading with Python and Data Analytics",
+      "introduction": "<strong>Trade Manager</strong> is a desktop application that automates the management of multiple trading accounts across various brokers. By leveraging <strong>Python</strong> and <strong>data analytics</strong>, it simplifies trade execution, automates strategies, and consolidates portfolio insights, reducing the time and effort required for multi-account trading.",
+      "background": "Managing trades across multiple accounts can be time-consuming and error-prone. <strong>Trade Manager</strong> provides a unified platform for streamlined trade execution, utilizing <strong>Python</strong> for automation and <strong>MongoDB</strong> for data storage. This approach minimizes errors, enables real-time decision-making, and improves portfolio management efficiency.",
+      "features": [
+        "<strong>Multi-Account Trading:</strong> Execute and track trades across multiple broker accounts from one platform.",
+        "<strong>Automated Trading Strategies:</strong> Select from pre-defined strategies that automate trade execution based on user preferences.",
+        "<strong>Comprehensive Trade History:</strong> View consolidated trading history with filtering options for data analysis.",
+        "<strong>Portfolio Management:</strong> Real-time open/close positions and net P/L calculations for simplified portfolio oversight.",
+        "<strong>Data-Driven Insights:</strong> Weekly profit/loss analysis and commission tracking offer valuable trading insights."
+      ],
+      "tech_stack": "The project uses <strong>Python</strong> for core functionality, <strong>MongoDB</strong> for data management, <strong>WebSockets</strong> for real-time broker communication, and <strong>InstallForge</strong> for software packaging.",
+      "development": "<strong>System Architecture:</strong> Designed to connect multiple accounts with real-time data updates.<br><strong>Automation and Data Processing:</strong> Uses algorithmic trading to automate orders, with data analytics for P/L insights.<br><strong>Testing:</strong> Extensive testing for accuracy in execution and data handling across accounts.",
+      "challenges": "<strong>Multi-Account Synchronization:</strong> Managing real-time data from various brokers efficiently.<br><strong>Real-Time Data Processing:</strong> Optimizing performance for timely trade execution.<br><strong>Security:</strong> Ensuring secure handling of credentials and trading data.",
+      "results": "<strong>Trade Manager</strong> enables seamless multi-account trading with automated execution and consolidated portfolio views. Users save time and reduce manual errors, benefiting from <strong>data-driven trade insights</strong>.",
+      "feedback": "Traders appreciated the convenience and automation, allowing them to focus on strategy rather than execution. The consolidated view of all accounts and automated strategies were especially valued.",
+      "improvements": "<strong>Expanded Broker Support:</strong> Adding compatibility with more brokers.<br><strong>Enhanced Security:</strong> Implementing two-factor authentication.<br><strong>Performance Optimization:</strong> Further improvements in real-time data processing for faster execution.",
+      "conclusion": "<strong>Trade Manager</strong> provides a powerful solution for multi-account trading by combining <strong>Python’s automation capabilities</strong> with <strong>data analytics</strong>. It empowers traders with an efficient, user-friendly tool that streamlines portfolio management and enhances trade accuracy.",
+      "categories": ["Python", "Algo Trading", "Data Science"],
+      "skills": ["Python Programming", "MongoDB", "Data Analysis", "Automation", "Real-Time Data Processing"],
+      "image": "images/projects/TradeManager/TradeManager.jpg",
+      "media": {
+        "type": "ppt",
+        "path": "https://docs.google.com/presentation/d/1MYDY8p4A-15WxZ6RJR1Z5quuqxBINJkn/edit?usp=sharing&ouid=104870617554992213042&rtpof=true&sd=true"
+      }
+    },
+
+    {
+      "id": "TradeMaster",
+      "title": "Trade Master",
+      "subtitle": "Automated Trade Execution System for High-Frequency Algorithmic Trading",
+      "introduction": "<strong>Trade Master</strong> is a back-end trade execution system developed for <strong>AlgoSuccess</strong> to automate and streamline trading. Built with <strong>Python</strong>, it provides seamless integration with <strong>brokerage APIs</strong>, ensuring real-time order placement. Designed for <strong>high-frequency traders</strong>, <strong>Trade Master</strong> enhances the efficiency of automated trading by minimizing latency and supporting large volumes of trades.",
+      "background": "As demand grows for advanced <strong>algorithmic trading solutions</strong>, <strong>Trade Master</strong> was created to automate trade execution within the <strong>AlgoSuccess platform</strong>. Leveraging <strong>Python’s</strong> power in handling asynchronous tasks and <strong>MongoDB</strong> for data logging, <strong>Trade Master</strong> offers traders a low-latency, high-performance tool for managing automated strategies, freeing them to focus on refining their algorithms.",
+      "features": [
+        "<strong>Real-Time Execution:</strong> Enables immediate trade placement, maintaining accuracy and timing across accounts.",
+        "<strong>API Integration:</strong> Connects with multiple brokers via <strong>WebSocket</strong>, allowing seamless account management and order placement.",
+        "<strong>High-Volume Support:</strong> Handles large trade volumes efficiently, making it ideal for <strong>high-frequency trading</strong>.",
+        "<strong>Error Handling & Risk Management:</strong> Built-in mechanisms to handle failed orders and mitigate risks, ensuring stability and consistency in volatile markets."
+      ],
+      "tech_stack": "Developed using <strong>Python</strong> for back-end processing, <strong>WebSocket</strong> for real-time broker communication, <strong>MongoDB</strong> for trade logging, and <strong>AWS</strong> for scalable cloud deployment.",
+      "development": "<strong>API Integration:</strong> Utilizes <strong>WebSocket</strong> for real-time execution and trade updates with broker APIs.<br><strong>Error Management:</strong> Implements robust error-handling to manage disruptions in broker connectivity.<br><strong>Trade Validation:</strong> Validates trades against predefined conditions for effective risk management.",
+      "challenges": "<strong>Low-Latency Optimization:</strong> Required extensive optimization to ensure rapid order placement.<br><strong>High-Volume Handling:</strong> Ensured system stability under large trade volumes without performance bottlenecks.<br><strong>API Reliability:</strong> Developed redundancy for consistent trade execution despite occasional broker API issues.",
+      "results": "<strong>Trade Master</strong> successfully supports <strong>high-frequency trading</strong> with real-time execution, handling multiple broker integrations smoothly. Traders benefit from low-latency order processing and reliable automation, streamlining their workflow.",
+      "feedback": "AlgoSuccess users praised the system’s efficiency, particularly its speed and reliability. Automation allowed traders to focus on strategy, resulting in improved trading performance.",
+      "improvements": "<strong>Expanded Broker Support:</strong> Adding compatibility with more brokers.<br><strong>Enhanced Risk Management:</strong> More customizable risk management profiles.<br><strong>Latency Optimization:</strong> Further reductions in trade execution times for even faster placement.",
+      "conclusion": "<strong>Trade Master</strong> is a powerful, <strong>Python-based system</strong> for automated trading that combines high-speed execution with robust data handling and <strong>API integration</strong>. By supporting <strong>algorithmic trading strategies</strong>, it provides AlgoSuccess users with a scalable, efficient solution for the dynamic world of <strong>high-frequency trading</strong>.",
+      "categories": ["Python", "Algo Trading", "Data Science"],
+      "skills": ["Python Programming", "WebSocket", "Asynchronous Programming", "MongoDB", "Real-Time Data Processing"],
+      "image": "images/projects/TradeMaster/TradeMaster.jpg",
+      "media": {
+        "type": "jpg",
+        "path": "./resources/TradeMaster.jpg"
+      }
+    }
+  ]
+}
