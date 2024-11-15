@@ -1,3 +1,3 @@
 ## Portfolio
 
-Link: https://dixituwindsor.github.io/portfolio/
+Link: https://dixitjnandaniya.github.io/portfolio/
