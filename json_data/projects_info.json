@@ -51,7 +51,7 @@
       "categories": ["Data Science", "Artificial Intelligence", "Python"],
       "skills": ["Image Processing", "Deep Learning", "ResNet-9", "PyTorch", "Machine Learning Deployment"],
       "image": "images/projects/PlantDiseaseDetection/PlantDiseaseDetection.jpg",
-      "github": "https://github.com/dixituwindsor/Plant_Disease_Detection",
+      "github": "https://github.com/dixitjnandaniya/Plant_Disease_Detection",
       "media": {
         "type": "png",
         "path": "./resources/PlantDiseaseDetection.png"
@@ -80,7 +80,7 @@
       "categories": ["Data Science", "Artificial Intelligence", "Python"],
       "skills": ["Machine Learning Algorithms", "Data Preprocessing", "Big Data Analysis", "Naive Bayes Classification", "Support Vector Machines"],
       "image": "images/projects/DiabetesDiseasePrediction/DiabetesDiseasePrediction.jpg",
-      "github": "https://github.com/dixituwindsor/Diabetes_Disease_Prediction"
+      "github": "https://github.com/dixitjnandaniya/Diabetes_Disease_Prediction"
     },
 
     {
@@ -105,7 +105,7 @@
       "categories": ["Data Science", "Machine Learning", "Python", "Android Development"],
       "skills": ["Random Forest", "Data Preprocessing", "NumPy", "Pandas", "Scikit-learn"],
       "image": "images/projects/PlacementPackagePrediction/PlacementPackagePrediction.jpg",
-      "github": "https://github.com/dixituwindsor/Placement_Package_Prediction",
+      "github": "https://github.com/dixitjnandaniya/Placement_Package_Prediction",
       "media": {
         "type": "ppt",
         "path": "https://docs.google.com/presentation/d/1Kv-vCoUgFFg30vWAPanc9pNgc490Enqj/edit?usp=sharing&ouid=104870617554992213042&rtpof=true&sd=true"
@@ -135,7 +135,7 @@
       "categories": ["Data Science", "Artificial Intelligence", "Python", "Web Development"],
       "skills": ["YOLOv8", "Deep Sort", "Django", "Roboflow", "Machine Learning Model Integration"],
       "image": "images/projects/MLKIDA/MLKIDA.jpg",
-      "github": "https://github.com/dixituwindsor/MLKIDA",
+      "github": "https://github.com/dixitjnandaniya/MLKIDA",
       "media": {
         "type": "png",
         "path": "./resources/MLKIDA.png"
@@ -164,7 +164,7 @@
       "categories": ["Web Development", "Python"],
       "skills": ["Python", "Django", "Web Development", "JavaScript", "GitHub"],
       "image": "images/projects/AdventureMinds/AdventureMinds.jpg",
-      "github": "https://github.com/dixituwindsor/AdventureMinds",
+      "github": "https://github.com/dixitjnandaniya/AdventureMinds",
       "media": {
         "type": "png",
         "path": "./resources/AdventureMinds.png"
@@ -194,7 +194,7 @@
       "categories": ["Android Applications"],
       "skills": ["Flutter", "Firebase", "Motion Detection", "Security Camera Integration", "Cross-Platform Development"],
       "image": "images/projects/ReSecure/ReSecure.jpg",
-      "github": "https://github.com/dixituwindsor/resecure",
+      "github": "https://github.com/dixitjnandaniya/resecure",
       "media": {
         "type": "ppt",
         "path": "https://docs.google.com/presentation/d/13W4d7LXA4i-n67fZ8CwLnTTLYKVn64gH/edit?usp=sharing&ouid=104870617554992213042&rtpof=true&sd=true"
@@ -224,7 +224,7 @@
       "categories": ["Android Applications"],
       "skills": ["Java", "Firebase", "Android Studio", "Scrum Methodology", "GitHub"],
       "image": "images/projects/WiseBridge/WiseBridge.jpg",
-      "github": "https://github.com/dixituwindsor/WiseBridge"
+      "github": "https://github.com/dixitjnandaniya/WiseBridge"
     },
 
     {
