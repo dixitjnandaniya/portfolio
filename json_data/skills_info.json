@@ -17,6 +17,22 @@
         "image": "./images/skills/ai.png"
       },
       {
+        "name": "React",
+        "image": "./images/skills/react.png"
+      },
+      {
+        "name": "HTML",
+        "image": "./images/skills/html.png"
+      },
+      {
+        "name": "CSS",
+        "image": "./images/skills/css.png"
+      },
+      {
+        "name": "JavaScript",
+        "image": "./images/skills/javascript.png"
+      },
+      {
         "name": "TensorFlow/Keras",
         "image": "./images/skills/tensorflow.png"
       },
