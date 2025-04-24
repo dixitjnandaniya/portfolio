@@ -1,24 +1,12 @@
 {
     "skills": [
       {
-        "name": "Machine Learning",
-        "image": "./images/skills/ml.png"
-      },
-      {
         "name": "Python Programming",
         "image": "./images/skills/python.png"
       },
       {
-        "name": "Data Analysis",
-        "image": "./images/skills/data_analytics.png"
-      },
-      {
-        "name": "Artificial Intelligence",
-        "image": "./images/skills/ai.png"
-      },
-      {
-        "name": "React",
-        "image": "./images/skills/react.png"
+        "name": "SQL",
+        "image": "./images/skills/sql.png"
       },
       {
         "name": "HTML",
@@ -33,6 +21,26 @@
         "image": "./images/skills/javascript.png"
       },
       {
+        "name": "AWS Cloud Services",
+        "image": "./images/skills/aws.png"
+      },
+      {
+        "name": "Machine Learning",
+        "image": "./images/skills/ml.png"
+      },
+      {
+        "name": "Data Analysis",
+        "image": "./images/skills/data_analytics.png"
+      },
+      {
+        "name": "Artificial Intelligence",
+        "image": "./images/skills/ai.png"
+      },
+      {
+        "name": "React",
+        "image": "./images/skills/react.png"
+      },
+      {
         "name": "TensorFlow/Keras",
         "image": "./images/skills/tensorflow.png"
       },
@@ -45,16 +53,8 @@
         "image": "./images/skills/django.png"
       },
       {
-        "name": "AWS Cloud Services",
-        "image": "./images/skills/aws.png"
-      },
-      {
         "name": "Data Visualization",
         "image": "./images/skills/data_visualization.png"
-      },
-      {
-        "name": "SQL",
-        "image": "./images/skills/sql.png"
       },
       {
         "name": "Deep Learning",
