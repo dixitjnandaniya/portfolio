@@ -1,72 +1,84 @@
 {
   "skills": [
     {
-      "name": "Python Programming",
+      "name": "Python",
       "image": "./images/skills/python.png"
     },
     {
-      "name": "Java Programming",
-      "image": "./images/skills/java.png"
+      "name": "Amazon Web Services",
+      "image": "./images/skills/aws.png"
     },
     {
-      "name": "SQL",
-      "image": "./images/skills/sql.png"
+      "name": "REST APIs",
+      "image": "./images/skills/restapi.png"
     },
     {
-      "name": "Asynchronous Programming",
-      "image": "./images/skills/asynchronous.png"
-    },
-    {
-      "name": "Multithreading",
-      "image": "./images/skills/multi_threading.png"
-    },
-    {
-      "name": "JavaScript",
-      "image": "./images/skills/javascript.png"
-    },
-    {
-      "name": "React",
-      "image": "./images/skills/react.png"
-    },
-    {
-      "name": "HTML",
-      "image": "./images/skills/html.png"
-    },
-    {
-      "name": "CSS",
-      "image": "./images/skills/css.png"
-    },
-    {
-      "name": "Django",
-      "image": "./images/skills/django.png"
+      "name": "Data Engineering",
+      "image": "./images/skills/data_engineering.png"
     },
     {
       "name": "Machine Learning",
       "image": "./images/skills/ml.png"
     },
     {
+      "name": "Microservices",
+      "image": "./images/skills/microservices.png"
+    },
+    {
+      "name": "Docker",
+      "image": "./images/skills/docker.png"
+    },
+    {
+      "name": "Distributed Systems",
+      "image": "./images/skills/distributed_systems.png"
+    },
+    {
+      "name": "Async Programming",
+      "image": "./images/skills/asynchronous.png"
+    },
+    {
+      "name": "Django",
+      "image": "./images/skills/django.png"
+    },
+    {
+      "name": "SQL",
+      "image": "./images/skills/sql.png"
+    },
+    {
+      "name": "PostgreSQL",
+      "image": "./images/skills/postgresql.png"
+    },
+    {
+      "name": "MongoDB",
+      "image": "./images/skills/mongodb.png"
+    },
+    {
+      "name": "Pandas",
+      "image": "./images/skills/pandas.png"
+    },
+    {
+      "name": "PyTorch",
+      "image": "./images/skills/pytorch.png"
+    },
+    {
+      "name": "Scikit-Learn",
+      "image": "./images/skills/scikit_learn.png"
+    },
+    {
       "name": "Deep Learning",
       "image": "./images/skills/dl.png"
     },
     {
-      "name": "TensorFlow/Keras",
+      "name": "TensorFlow",
       "image": "./images/skills/tensorflow.png"
     },
     {
-      "name": "Data Visualization",
-      "image": "./images/skills/data_visualization.png"
-    },
-    {
-      "name": "AWS",
-      "image": "./images/skills/aws.png"
-    },
-    {
-      "name": "Git & GitHub",
+      "name": "GitHub",
       "image": "./images/skills/github.png"
     },
     {
-      "name": "Algorithmic Trading",
-      "image": "./images/skills/algo_trading.png"
+      "name": "Java",
+      "image": "./images/skills/java.png"
     }
   ]
 }

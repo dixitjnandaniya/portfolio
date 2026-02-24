@@ -21,7 +21,7 @@
       "improvements": "<strong>Enhanced Analytics:</strong> Plan to develop a <strong>web interface</strong> with advanced analytics options.<br><strong>Historical Data:</strong> Further explore options for including historical trend data.<br><strong>Improved Interface:</strong> Increase interactivity for in-depth data exploration.",
       "conclusion": "This project uses <strong>data science</strong> and <strong>AWS</strong> to reveal <strong>YouTube content trends</strong> globally. The secure, scalable system provides actionable insights, empowering <strong>marketers</strong> and <strong>creators</strong> to make <strong>data-informed decisions</strong>.",
       "categories": ["Data Science", "AWS"],
-      "skills": ["Data Analysis", "YouTube API", "Data Processing Pipeline", "AWS", "Real-time Data Handling"],
+      "skills": ["Data Analysis", "Data Processing Pipeline", "AWS", "Real-time Data Handling"],
       "image": "images/projects/YouTubeDataAnalysis/YouTubeDataAnalysis.jpg",
       "media": {
         "type": "ppt",
@@ -49,7 +49,7 @@
       "improvements": "<strong>Dataset Expansion:</strong> Adding more plant species and diseases.<br><strong>Enhanced App Features:</strong> Allow image capture within the app for real-time analysis.<br><strong>Personalized Disease Management Tips:</strong> Tailored advice based on detected diseases.",
       "conclusion": "This project showcases <strong>AI’s</strong> potential in supporting <strong>sustainable agriculture</strong>, providing a <strong>data science-driven tool</strong> to enhance plant health management. Planned improvements aim to broaden disease coverage and further empower users with actionable insights.",
       "categories": ["Data Science", "Artificial Intelligence", "Python"],
-      "skills": ["Image Processing", "Deep Learning", "ResNet-9", "PyTorch", "Machine Learning Deployment"],
+      "skills": ["Image Processing", "Deep Learning", "ResNet-9", "PyTorch"],
       "image": "images/projects/PlantDiseaseDetection/PlantDiseaseDetection.jpg",
       "github": "https://github.com/dixitjnandaniya/Plant_Disease_Detection",
       "media": {
@@ -59,8 +59,8 @@
     },
 
     {
-      "id": "DiabetesDiseasePrediction",
-      "title": "Diabetes Disease Prediction",
+      "id": "DiabetesPrediction",
+      "title": "Diabetes Prediction",
       "subtitle": "Data Science Approach to Diabetes Prediction Using Machine Learning on Big Healthcare Data",
       "introduction": "This study focuses on <strong>data science</strong> techniques applied to <strong>diabetes prediction</strong> using healthcare data. It analyzes and evaluates various <strong>machine learning models</strong>, providing insights into each model's predictive capabilities and limitations. The project aims to enhance diabetes prediction using a data-driven approach that could support healthcare professionals in early detection efforts.",
       "background": "<strong>Diabetes</strong> is a global health concern, impacting millions worldwide. This project applies <strong>data science</strong> principles to explore healthcare data and develop predictive models for diabetes, providing early diagnostic support through <strong>machine learning</strong>.",
@@ -78,14 +78,14 @@
       "improvements": "Future enhancements include:<br><strong>Advanced Privacy Solutions:</strong> Ensuring data security for large-scale healthcare datasets.<br><strong>Expanded Model Exploration:</strong> Applying advanced machine learning and deep learning techniques.<br><strong>Data Quality Augmentation:</strong> Enhancing dataset size and quality to support more robust model training.",
       "conclusion": "This <strong>data science project</strong> underscores the importance of model comparison for <strong>diabetes prediction</strong>, leveraging healthcare data to support early diagnosis efforts. Continued exploration of advanced techniques can enhance model accuracy and address challenges in <strong>data privacy</strong>.",
       "categories": ["Data Science", "Artificial Intelligence", "Python"],
-      "skills": ["Machine Learning Algorithms", "Data Preprocessing", "Big Data Analysis", "Naive Bayes Classification", "Support Vector Machines"],
+      "skills": ["Data Preprocessing", "Big Data Analysis", "Naive Bayes Classification", "Support Vector Machines"],
       "image": "images/projects/DiabetesDiseasePrediction/DiabetesDiseasePrediction.jpg",
       "github": "https://github.com/dixitjnandaniya/Diabetes_Disease_Prediction"
     },
 
     {
-      "id": "PlacementPackagePrediction",
-      "title": "Placement Package Prediction",
+      "id": "PlacementPrediction",
+      "title": "Placement Prediction",
       "subtitle": "Data Science-Driven Campus Placement Package Prediction",
       "introduction": "The <strong>Placement Package Prediction System</strong> leverages <strong>machine learning</strong> to predict campus placement packages based on student data. By analyzing <strong>academic performance</strong>, <strong>project work</strong>, and <strong>extracurriculars</strong>, this model provides students with an estimated package figure, accessible via an <strong>Android application</strong>.",
       "background": "<strong>Placement outcomes</strong> are critical for students and colleges alike. This project applies <strong>data science</strong> to analyze historical placement data, generating predictive insights into potential package offers. Using factors like <strong>CGPA</strong>, projects, and skills, the model provides students with personalized placement predictions, aiding their preparation.",
@@ -103,7 +103,7 @@
       "improvements": "<strong>Improving Data Accuracy:</strong> Include more factors like <strong>internships</strong> and <strong>soft skills</strong> to refine predictions.<br><strong>Dataset Expansion:</strong> Adding more years of data will enhance model accuracy.<br><strong>Real-Time Updates:</strong> Allow students to update profiles for instant, refreshed predictions.",
       "conclusion": "This <strong>Placement Package Prediction System</strong> showcases <strong>data science</strong> in campus placements, providing personalized package estimates based on historical data. Accessible via a mobile app, the system offers students actionable insights and supports informed preparation for placement season.",
       "categories": ["Data Science", "Machine Learning", "Python", "Android Development"],
-      "skills": ["Random Forest", "Data Preprocessing", "NumPy", "Pandas", "Scikit-learn"],
+      "skills": ["Data Preprocessing", "NumPy", "Pandas", "Scikit-learn"],
       "image": "images/projects/PlacementPackagePrediction/PlacementPackagePrediction.jpg",
       "github": "https://github.com/dixitjnandaniya/Placement_Package_Prediction",
       "media": {
@@ -133,7 +133,7 @@
       "improvements": "<strong>Multi-Pest Detection:</strong> Future updates will include more pest types.<br><strong>Expanded Coverage:</strong> Increase support for a broader range of crops.<br><strong>Mobile Interface:</strong> Enhanced mobile features for real-time, on-the-go alerts.",
       "conclusion": "<strong>ML K.I.D.A.</strong> exemplifies the power of <strong>data science</strong> in precision agriculture, providing farmers with an intelligent, automated solution for pest management and supporting sustainable food production.",
       "categories": ["Data Science", "Artificial Intelligence", "Python", "Web Development"],
-      "skills": ["YOLOv8", "Deep Sort", "Django", "Roboflow", "Machine Learning Model Integration"],
+      "skills": ["YOLOv8", "Deep Sort", "Django", "Roboflow"],
       "image": "images/projects/MLKIDA/MLKIDA.jpg",
       "github": "https://github.com/dixitjnandaniya/MLKIDA",
       "media": {
@@ -162,7 +162,7 @@
       "improvements": "<strong>Advanced Search:</strong> Filters for destinations, duration, and travel type.<br><strong>Mobile App:</strong> Plans for mobile development for on-the-go planning.<br><strong>Enhanced Reviews:</strong> Adding a more robust review and rating system.",
       "conclusion": "<strong>AdventureMinds</strong> revolutionizes travel planning with collaborative features and real-time communication, offering a dynamic platform for connecting and planning together.",
       "categories": ["Web Development", "Python"],
-      "skills": ["Python", "Django", "Web Development", "JavaScript", "GitHub"],
+      "skills": ["Python", "Django", "JavaScript", "GitHub"],
       "image": "images/projects/AdventureMinds/AdventureMinds.jpg",
       "github": "https://github.com/dixitjnandaniya/AdventureMinds",
       "media": {
@@ -192,7 +192,7 @@
       "improvements": "<strong>Web Portal Access:</strong> Planned web portal access for increased flexibility.<br><strong>Enhanced Motion Detection:</strong> Further customization to reduce false positives.<br><strong>Smart Home Integration:</strong> Future updates will allow integration with other smart home devices.",
       "conclusion": "<strong>ReSecure</strong> redefines home security by turning old smartphones into effective security systems. With its user-friendly design and focus on sustainability, <strong>ReSecure</strong> offers a practical, low-cost solution for modern home security needs.",
       "categories": ["Android Applications"],
-      "skills": ["Flutter", "Firebase", "Motion Detection", "Security Camera Integration", "Cross-Platform Development"],
+      "skills": ["Flutter", "Firebase", "Motion Detection", "Cross-Platform Development"],
       "image": "images/projects/ReSecure/ReSecure.jpg",
       "github": "https://github.com/dixitjnandaniya/resecure",
       "media": {
@@ -222,7 +222,7 @@
       "improvements": "<strong>Scalability:</strong> Improving moderation for a larger user base.<br><strong>New Features:</strong> Adding seminar and event organization tools.<br><strong>Enhanced Networking:</strong> Expanding collaboration options beyond chat and event scheduling.",
       "conclusion": "<strong>WiseBridge</strong> uniquely supports the <strong>University of Windsor</strong>’s <strong>MAC community</strong>, offering a combination of educational resources, networking, and monetization. It’s a valuable tool for fostering academic collaboration and support.",
       "categories": ["Android Applications"],
-      "skills": ["Java", "Firebase", "Android Studio", "Scrum Methodology", "GitHub"],
+      "skills": ["Java", "Firebase", "Android Studio", "GitHub"],
       "image": "images/projects/WiseBridge/WiseBridge.jpg",
       "github": "https://github.com/dixitjnandaniya/WiseBridge"
     },
@@ -248,7 +248,7 @@
       "improvements": "<strong>Expanded Broker Support:</strong> Adding compatibility with more brokers.<br><strong>Enhanced Security:</strong> Implementing two-factor authentication.<br><strong>Performance Optimization:</strong> Further improvements in real-time data processing for faster execution.",
       "conclusion": "<strong>Trade Manager</strong> provides a powerful solution for multi-account trading by combining <strong>Python’s automation capabilities</strong> with <strong>data analytics</strong>. It empowers traders with an efficient, user-friendly tool that streamlines portfolio management and enhances trade accuracy.",
       "categories": ["Python", "Algo Trading", "Data Science"],
-      "skills": ["Python Programming", "MongoDB", "Data Analysis", "Automation", "Real-Time Data Processing"],
+      "skills": ["Python", "MongoDB", "Data Analysis", "Automation"],
       "image": "images/projects/TradeManager/TradeManager.jpg",
       "media": {
         "type": "ppt",
@@ -276,7 +276,7 @@
       "improvements": "<strong>Expanded Broker Support:</strong> Adding compatibility with more brokers.<br><strong>Enhanced Risk Management:</strong> More customizable risk management profiles.<br><strong>Latency Optimization:</strong> Further reductions in trade execution times for even faster placement.",
       "conclusion": "<strong>Trade Master</strong> is a powerful, <strong>Python-based system</strong> for automated trading that combines high-speed execution with robust data handling and <strong>API integration</strong>. By supporting <strong>algorithmic trading strategies</strong>, it provides AlgoSuccess users with a scalable, efficient solution for the dynamic world of <strong>high-frequency trading</strong>.",
       "categories": ["Python", "Algo Trading", "Data Science"],
-      "skills": ["Python Programming", "WebSocket", "Asynchronous Programming", "MongoDB", "Real-Time Data Processing"],
+      "skills": ["Python", "WebSocket", "Asynchronous Programming", "MongoDB"],
       "image": "images/projects/TradeMaster/TradeMaster.jpg",
       "media": {
         "type": "jpg",
