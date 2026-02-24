@@ -192,7 +192,7 @@
       "improvements": "<strong>Web Portal Access:</strong> Planned web portal access for increased flexibility.<br><strong>Enhanced Motion Detection:</strong> Further customization to reduce false positives.<br><strong>Smart Home Integration:</strong> Future updates will allow integration with other smart home devices.",
       "conclusion": "<strong>ReSecure</strong> redefines home security by turning old smartphones into effective security systems. With its user-friendly design and focus on sustainability, <strong>ReSecure</strong> offers a practical, low-cost solution for modern home security needs.",
       "categories": ["Android Applications"],
-      "skills": ["Flutter", "Firebase", "Motion Detection", "Cross-Platform Development"],
+      "skills": ["Flutter", "Firebase", "Motion Detection", "Cross-Platform App"],
       "image": "images/projects/ReSecure/ReSecure.jpg",
       "github": "https://github.com/dixitjnandaniya/resecure",
       "media": {
