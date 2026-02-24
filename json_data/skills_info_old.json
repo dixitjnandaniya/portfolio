@@ -1,0 +1,93 @@
+{
+    "skills": [
+      {
+        "name": "Python Programming",
+        "image": "./images/skills/python.png"
+      },
+      {
+        "name": "SQL",
+        "image": "./images/skills/sql.png"
+      },
+      {
+        "name": "HTML",
+        "image": "./images/skills/html.png"
+      },
+      {
+        "name": "CSS",
+        "image": "./images/skills/css.png"
+      },
+      {
+        "name": "JavaScript",
+        "image": "./images/skills/javascript.png"
+      },
+      {
+        "name": "AWS Cloud Services",
+        "image": "./images/skills/aws.png"
+      },
+      {
+        "name": "Machine Learning",
+        "image": "./images/skills/ml.png"
+      },
+      {
+        "name": "Data Analysis",
+        "image": "./images/skills/data_analytics.png"
+      },
+      {
+        "name": "Artificial Intelligence",
+        "image": "./images/skills/ai.png"
+      },
+      {
+        "name": "React",
+        "image": "./images/skills/react.png"
+      },
+      {
+        "name": "TensorFlow/Keras",
+        "image": "./images/skills/tensorflow.png"
+      },
+      {
+        "name": "Android Development",
+        "image": "./images/skills/android.png"
+      },
+      {
+        "name": "Django Frameworks",
+        "image": "./images/skills/django.png"
+      },
+      {
+        "name": "Data Visualization",
+        "image": "./images/skills/data_visualization.png"
+      },
+      {
+        "name": "Deep Learning",
+        "image": "./images/skills/dl.png"
+      },
+      {
+        "name": "Flutter",
+        "image": "./images/skills/flutter.png"
+      },
+      {
+        "name": "Agile Methodologies",
+        "image": "./images/skills/agile.png"
+      },
+      {
+        "name": "Git & GitHub",
+        "image": "./images/skills/github.png"
+      },
+      {
+        "name": "Java Programming",
+        "image": "./images/skills/java.png"
+      },
+      {
+        "name": "Algorithmic Trading",
+        "image": "./images/skills/algo_trading.png"
+      },
+      {
+        "name": "Multithreading",
+        "image": "./images/skills/multi_threading.png"
+      },
+      {
+        "name": "Asynchronous Programming",
+        "image": "./images/skills/asynchronous.png"
+      }
+    ]
+  }
+  
